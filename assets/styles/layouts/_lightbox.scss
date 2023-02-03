@@ -1,0 +1,176 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lightbox {
+  display: none;
+  place-items: center;
+  z-index: 1000;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.883);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow: auto;
+  animation: lightbox 0.5s;
+  transition: opacity 0.3s;
+}
+
+.close {
+  position: absolute;
+  right: 45px;
+  top: 50px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  animation: lightbox 0.5s;
+  transition: opacity 0.3s;
+}
+
+.close:before,
+.close:after {
+  content: " ";
+  position: absolute;
+  left: 15px;
+  height: 33px;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+.close:before {
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+.close:after {
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-45deg);
+}
+
+@keyframes lightbox {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  --position: 50%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image-container {
+  width: 80vw;
+  height: 80vh;
+  aspect-ratio: 1/1;
+}
+
+.lightbox-close {
+  cursor: pointer;
+  position: absolute;
+  right: -35px;
+  top: 0;
+}
+
+.fa-xmark-large {
+  color: #fff;
+  font-size: 3em;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-before {
+  position: absolute;
+  inset: 0;
+  width: var(--position);
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+  /* for Firefox */
+  width: 100%;
+  height: 100%;
+}
+
+.slider:focus-visible ~ .slider-button {
+  outline: 5px solid black;
+  outline-offset: 3px;
+}
+
+.slider-line {
+  position: absolute;
+  inset: 0;
+  width: 0.2rem;
+  height: 100%;
+  background-color: #fff;
+  /* z-index: 10; */
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.slider-button {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  /* z-index: 100; */
+  //box-shadow: 1px 1px 1px hsl(0, 50%, 2%, 0.5);
+}
+
+@media only screen and (max-width: 900px) {
+   
+.close{
+  right: 7px;
+  top: 10px;
+}
+.image-container {
+  width: 90vw;
+  height: 80vh;
+  aspect-ratio: 1/1;
+}
+}
+
+@media (orientation: landscape) {
+  .image-container {
+    width: 85vw;
+    height: 75vh;
+    aspect-ratio: 1/1;
+  }
+}

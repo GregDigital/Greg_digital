@@ -1,0 +1,124 @@
+.home {
+ 
+  .share {
+    z-index: 2;
+    position: fixed;
+    right: 15px;
+    bottom: 50%;
+    span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      display: block;
+      margin-bottom: 1em;
+      color: $white;
+    }
+    .fa-brands {
+      color: $yellow;
+      font-size: 1.2em;
+    }
+  }
+
+  #svg {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+  #svg path * {
+    stroke-linecap: square;
+    fill-opacity: 0;
+    transition: fill-opacity 1s;
+  }
+  #svg.finished * {
+    fill-opacity: 1;
+  }
+
+  .frame_right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .frame_left {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .vertical {
+    font-family: $font2;
+    border-right: 2px solid #a90000;
+    color: $yellow;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    animation-name: vertical;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    font-size: 0.8em;
+    writing-mode: tb-rl;
+    text-orientation: mixed;
+    vertical-align: sub;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+}
+.background_black {
+
+  background: #0000005c;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+
+@keyframes vertical {
+  0% {
+    bottom: 10%;
+  }
+
+  50% {
+    bottom: 12%;
+  }
+
+  100% {
+    bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #background-video-mobile{
+    display: block;
+
+  }
+
+
+#background-video  {
+display: none;
+
+  }
+
+  .home #svg {
+    width: 343px;
+    left: 50%;
+  }
+  .home{
+  .frame_left {
+    top: 54%;
+  }}
+}
+
+
+@media only screen and (max-width: 448px) {
+
+
+  .home #svg {
+    width: 243px;
+  }
+  .home{
+    .frame_left {
+      top: 53%;
+    }}
+}

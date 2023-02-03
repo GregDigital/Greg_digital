@@ -1,0 +1,94 @@
+.service {
+  position: relative;
+
+  h1 {
+    font-size: 1.2em;
+    font-family: $font1;
+    text-transform: uppercase;
+    margin-top: 3em;
+    text-align: center;
+    img:first-child {
+      margin-right: 0.5em;
+    }
+    img:last-child {
+      margin-left: 0.5em;
+    }
+  }
+
+  a{
+    color: $yellow;
+  }
+
+  .text_service {
+    width: 80%;
+    margin: 2em auto 0 auto;
+    text-align: justify;
+    line-height: 2.2;
+    letter-spacing: 1px;
+  }
+
+  .container {
+    margin: 6em auto 6em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    .container__infos {
+      background-color: rgb(18, 17, 17);
+     text-align: center;
+      border: solid 2px $yellow;
+      width: 180px;
+      height: 250px;
+      img{
+        margin-top: 2em;
+        margin-bottom: 1em;
+      }
+      h2{
+        font-size: 1em;
+        font-family: $font2;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#img_peinture {
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-image: url(../img/img_peinture.png);
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 1;
+  p {
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+  }
+  blockquote p::before {
+    content: "\201C";
+    font-size: 5em;
+    font-family: $font1;
+    color: $yellow;
+  }
+
+  blockquote p::after {
+    content: "\201D";
+    font-size: 5em;
+    font-family: $font1;
+    color: $yellow;
+  }
+}
+.reveal1 {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.visible {
+  opacity: 1;
+  transform: none;
+}

@@ -1,0 +1,34 @@
+{
+    "car": [
+        {
+            "id": 1,
+            "after": "golf_after.jpg",
+            "before": "golf_before.jpg"
+        },
+        {
+            "id": 2,
+            "after": "suv_after.jpg",
+            "before": "suv_before.jpg"
+        },
+        {
+            "id": 3,
+            "after": "fiat_after.jpg",
+            "before": "fiat_before.jpg"
+        },
+        {
+            "id": 4,
+            "after": "phare_after.jpg",
+            "before": "phare_before.jpg"
+        },
+        {
+            "id": 5,
+            "after": "chassis_after.jpg",
+            "before": "chassis_before.jpg"
+        },
+        {
+            "id": 6,
+            "after": "aile_after.jpg",
+            "before": "aile_before.jpg"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+.s{
+    position: relative;
+}
+
+.mentions_legales {
+   margin-left: 2em;
+   margin-right: 2em;
+
+  
+    h1 {
+        font-family: $font1;
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .description_mentions {
+      border: solid 2px $yellow;
+      height: auto;
+      border-radius: 2em;
+      margin-top: 2em;
+      padding: 1.5em;
+  
+      p {
+        font-family: $font2;
+        font-size: 1.2em;
+        color: $white;
+        margin-bottom: 1em;
+      }
+      h2 {
+        font-family: $font2;
+        font-size: 1.3em;
+        color: $white;
+        margin-bottom: 1em;
+      }
+      .p_mentions {
+        font-size: 1em;
+        color: $white;
+        margin-bottom: 1em;
+        line-height: 1.5em;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .mentions_legales {
+      margin: 3em 1em 5em 1em;
+    }
+  }
+  
