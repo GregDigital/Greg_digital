@@ -99,71 +99,47 @@ header .t nav ul li {
           align-items: center;
   text-transform: uppercase;
   color: white;
-  font-size: 0.9em;
-  font-family: "Nunito", sans-serif;
+  font-size: 1.375em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   margin-right: 2em;
 }
 
-header .t nav ul li img {
-  width: 16px;
-  height: 16px;
-  margin-right: 1em;
-}
-
-header .t nav ul .pistolet {
-  display: none;
-}
-
-header .t nav ul li:hover > .pistolet {
-  display: block;
-  width: 18px;
-  background-image: url(../img/pistolet.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -21px;
-  height: 18px;
-  bottom: -19px;
-  -webkit-transition: ease 1s;
-  transition: ease 1s;
-}
-
 header .t nav ul a {
+  display: inline-block;
   position: relative;
-}
-
-header .t nav ul a:after {
-  content: "";
-  position: absolute;
-  background-color: #FFE990;
-  height: 2px;
-  width: 0;
-  right: 0;
-  bottom: -10px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-header .t nav ul a:hover:after {
-  width: 100%;
+  padding: 10px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-repeat: no-repeat;
 }
 
 header .t nav ul a:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #258530;
+  color: #FFE990;
 }
 
-header .t .number {
-  margin-right: 1em;
-  font-family: "Nunito", sans-serif;
+header .t nav ul a::after {
+  content: url(../img/hover.svg);
+  width: 100%;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-header .t .number span {
-  font-size: 0.9em;
-}
-
-header .t .number span .fa-phone {
-  margin-right: 1em;
+header .t nav ul a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 @media only screen and (max-width: 990px) {
@@ -250,59 +226,6 @@ header .t .number span .fa-phone {
   header nav ul li img {
     width: 16px;
     height: 16px;
-    margin-right: 1em;
-  }
-  header nav ul .pistolet {
-    display: none;
-  }
-  header nav ul li:hover > .pistolet {
-    display: block;
-    width: 18px;
-    background-image: url(../img/pistolet.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -21px;
-    height: 18px;
-    bottom: -19px;
-    -webkit-transition: ease 1s;
-    transition: ease 1s;
-  }
-  header nav ul a {
-    position: relative;
-  }
-  header nav ul a:after {
-    content: "";
-    position: absolute;
-    background-color: #FFE990;
-    height: 2px;
-    width: 0;
-    right: 0;
-    bottom: -10px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  header nav ul a:hover:after {
-    width: 100%;
-  }
-  header nav ul a:hover {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    color: #258530;
-  }
-  header .number {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin-right: 0;
-    font-family: "Nunito", sans-serif;
-    color: #FFE990;
-  }
-  header .number span {
-    font-size: 0.9em;
-  }
-  header .number span .fa-phone {
     margin-right: 1em;
   }
 }
@@ -420,12 +343,6 @@ header .t .number span .fa-phone {
 }
 
 @media only screen and (max-width: 990px) {
-  #background-video-mobile {
-    display: block;
-  }
-  #background-video {
-    display: none;
-  }
   .home #svg {
     width: 343px;
     left: 50%;
@@ -1287,10 +1204,6 @@ footer .copyright {
   overflow: hidden;
   border-radius: 1rem;
   --position: 50%;
-}
-
-img {
-  max-width: 100%;
 }
 
 .image-container {

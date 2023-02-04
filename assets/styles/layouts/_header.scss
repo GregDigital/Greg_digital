@@ -20,63 +20,45 @@ header {
           align-items: center;
           text-transform: uppercase;
           color: $white;
-          font-size: 0.9em;
-          font-family: $font1;
+          font-size: 1.375em;
+          font-family: $font2;
+          font-weight:500;
           margin-right: 2em;
-          img {
-            width: 16px;
-            height: 16px;
-            margin-right: 1em;
-          }
+     
         }
-        .pistolet {
-          display: none;
-        }
-        li:hover > .pistolet {
-          display: block;
-          width: 18px;
-          background-image: url(../img/pistolet.png);
-          background-repeat: no-repeat;
-          position: absolute;
-          right: -21px;
-          height: 18px;
-          bottom: -19px;
-          transition: ease 1s;
-        }
+     
 
         a {
+          display: inline-block;
           position: relative;
-          &:after {
-            content: "";
-            position: absolute;
-            background-color: $yellow;
-            height: 2px;
-            width: 0;
-            right: 0;
-            bottom: -10px;
-            transition: 0.3s;
-          }
-          &:hover:after {
-            width: 100%;
-          }
-          &:hover {
-            transition: 0.3s;
-            color: rgb(37, 133, 48);
-          }
+          padding: 10px 20px;
+          transition: all 0.3s ease;
+          background-repeat: no-repeat;
+        }
+        
+        a:hover {
+          color: $yellow;
+        }
+        a::after {
+          content: url(../img/hover.svg);
+          width: 100%;
+          background-size: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s ease;
+        }
+        
+        a:hover::after {
+          transform: scaleX(1);
+          transform-origin: right;
         }
       }
     }
 
-    .number {
-      margin-right: 1em;
-      font-family: $font1;
-      span {
-        font-size: 0.9em;
-        .fa-phone {
-          margin-right: 1em;
-        }
-      }
-    }
+  
   }
 
   @media only screen and (max-width: 990px) {
@@ -154,58 +136,11 @@ header {
             margin-right: 1em;
           }
         }
-        .pistolet {
-          display: none;
-        }
-        li:hover > .pistolet {
-          display: block;
-          width: 18px;
-          background-image: url(../img/pistolet.png);
-          background-repeat: no-repeat;
-          position: absolute;
-          right: -21px;
-          height: 18px;
-          bottom: -19px;
-          transition: ease 1s;
-        }
-
-        a {
-          position: relative;
-          &:after {
-            content: "";
-            position: absolute;
-            background-color: $yellow;
-            height: 2px;
-            width: 0;
-            right: 0;
-            bottom: -10px;
-            transition: 0.3s;
-          }
-          &:hover:after {
-            width: 100%;
-          }
-          &:hover {
-            transition: 0.3s;
-            color: rgb(37, 133, 48);
-          }
-        }
+ 
+     
       }
     }
 
-    .number {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-right: 0;
-      font-family: $font1;
-      color: $yellow;
-      span {
-        font-size: 0.9em;
-        .fa-phone {
-          margin-right: 1em;
-        }
-      }
-    }
+
   }
 }
