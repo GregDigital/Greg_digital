@@ -271,6 +271,139 @@ header .t nav ul a:hover::after {
   fill-opacity: 1;
 }
 
+.home .styles_noise__LtUjd {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.home .styles_noise__LtUjd::after {
+  content: "";
+  width: calc(100% + 20rem);
+  height: calc(100% + 20rem);
+  background-position: 50%;
+  position: absolute;
+  left: -10rem;
+  top: -10rem;
+  background-image: url(../img/noise.png);
+  will-change: transform;
+  -webkit-animation: styles_noise__LtUjd 1s steps(2) infinite;
+          animation: styles_noise__LtUjd 1s steps(2) infinite;
+}
+
+@-webkit-keyframes styles_noise__LtUjd {
+  0% {
+    -webkit-transform: translate3d(0, 9rem, 0);
+            transform: translate3d(0, 9rem, 0);
+  }
+  10% {
+    -webkit-transform: translate3d(-1rem, -4rem, 0);
+            transform: translate3d(-1rem, -4rem, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-8rem, 2rem, 0);
+            transform: translate3d(-8rem, 2rem, 0);
+  }
+  30% {
+    -webkit-transform: translate3d(9rem, -9rem, 0);
+            transform: translate3d(9rem, -9rem, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(-2rem, 7rem, 0);
+            transform: translate3d(-2rem, 7rem, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-9rem, -4rem, 0);
+            transform: translate3d(-9rem, -4rem, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(2rem, 6rem, 0);
+            transform: translate3d(2rem, 6rem, 0);
+  }
+  70% {
+    -webkit-transform: translate3d(7rem, -8rem, 0);
+            transform: translate3d(7rem, -8rem, 0);
+  }
+  80% {
+    -webkit-transform: translate3d(-9rem, 1rem, 0);
+            transform: translate3d(-9rem, 1rem, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(6rem, -5rem, 0);
+            transform: translate3d(6rem, -5rem, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-7rem, 0, 0);
+            transform: translate3d(-7rem, 0, 0);
+  }
+}
+
+@keyframes styles_noise__LtUjd {
+  0% {
+    -webkit-transform: translate3d(0, 9rem, 0);
+            transform: translate3d(0, 9rem, 0);
+  }
+  10% {
+    -webkit-transform: translate3d(-1rem, -4rem, 0);
+            transform: translate3d(-1rem, -4rem, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-8rem, 2rem, 0);
+            transform: translate3d(-8rem, 2rem, 0);
+  }
+  30% {
+    -webkit-transform: translate3d(9rem, -9rem, 0);
+            transform: translate3d(9rem, -9rem, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(-2rem, 7rem, 0);
+            transform: translate3d(-2rem, 7rem, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-9rem, -4rem, 0);
+            transform: translate3d(-9rem, -4rem, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(2rem, 6rem, 0);
+            transform: translate3d(2rem, 6rem, 0);
+  }
+  70% {
+    -webkit-transform: translate3d(7rem, -8rem, 0);
+            transform: translate3d(7rem, -8rem, 0);
+  }
+  80% {
+    -webkit-transform: translate3d(-9rem, 1rem, 0);
+            transform: translate3d(-9rem, 1rem, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(6rem, -5rem, 0);
+            transform: translate3d(6rem, -5rem, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-7rem, 0, 0);
+            transform: translate3d(-7rem, 0, 0);
+  }
+}
+
+.home .blurBlue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #103D47;
+  border-radius: 100%;
+  font-size: 250px;
+  height: 80%;
+  width: 80%;
+  -webkit-filter: blur(204px);
+          filter: blur(204px);
+}
+
 .home .frame_right {
   position: absolute;
   top: 50%;
@@ -481,6 +614,7 @@ header .t nav ul a:hover::after {
 .apropos h1 {
   font-size: 1.2em;
   font-family: "Nunito", sans-serif;
+  color: #FFE990;
   text-transform: uppercase;
   margin-bottom: 3em;
   text-align: center;
@@ -585,99 +719,13 @@ header .t nav ul a:hover::after {
   }
 }
 
-.lateam {
-  position: relative;
-}
-
-.lateam h1 {
-  font-size: 1.2em;
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
-  margin-top: 4em;
-  text-align: center;
-}
-
-.lateam h1 img:first-child {
-  margin-right: 0.5em;
-}
-
-.lateam h1 img:last-child {
-  margin-left: 0.5em;
-}
-
-.lateam .container_team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 5em;
-}
-
-.lateam .container_team .team {
-  position: relative;
-  width: 50%;
-  background-image: url(../img/cadre.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 520px;
-}
-
-.lateam .container_team .team img {
-  width: 170px;
-  left: 50%;
-  position: absolute;
-  top: 110px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.lateam .container_team .team .team_info {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 50%;
-}
-
-.lateam .container_team .team .team_info h2 {
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-@media only screen and (max-width: 740px) {
-  .lateam {
-    position: relative;
-  }
-  .lateam h1 {
-    font-size: 1.2em;
-    font-family: "Nunito", sans-serif;
-    text-transform: uppercase;
-    margin-top: 1em;
-    text-align: center;
-  }
-  .lateam h1 img:first-child {
-    margin-right: 0.5em;
-  }
-  .lateam h1 img:last-child {
-    margin-left: 0.5em;
-  }
-  .lateam .container_team {
-    display: block;
-    margin-top: 5em;
-  }
-  .lateam .container_team .team {
-    width: 100%;
-  }
-}
-
 .realisation h1 {
   font-size: 1.2em;
   font-family: "Roboto", sans-serif;
   color: #FFE990;
   text-transform: uppercase;
   margin-top: 1em;
+  margin-bottom: 5em;
   text-align: center;
 }
 
@@ -710,13 +758,10 @@ header .t nav ul a:hover::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 6vmin;
   overflow: hidden;
 }
 
 .realisation .right {
-  width: 744px;
-  height: 220px;
   margin-bottom: 5em;
 }
 
@@ -724,15 +769,15 @@ header .t nav ul a:hover::after {
   border-radius: 35px;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .realisation .right img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media only screen and (max-width: 900px) {
@@ -765,8 +810,8 @@ header .t nav ul a:hover::after {
   .realisation .right img:hover {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
 }
 
@@ -781,6 +826,7 @@ header .t nav ul a:hover::after {
   text-transform: uppercase;
   margin-bottom: 5em;
   text-align: center;
+  color: #FFE990;
 }
 
 .contact form {
@@ -799,7 +845,7 @@ header .t nav ul a:hover::after {
   height: 62px;
   border-radius: 42px;
   padding: 16px 30px;
-  border: 1px solid #72D1EC;
+  border: 4px solid #72D1EC;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-user-select: none;
@@ -826,7 +872,7 @@ header .t nav ul a:hover::after {
   height: 100px;
   border-radius: 42px;
   padding: 16px 30px;
-  border: 1px solid #72D1EC;
+  border: 4px solid #72D1EC;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-user-select: none;
@@ -1081,6 +1127,12 @@ footer .copyright {
   margin-top: 5em;
 }
 
+.image-container {
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .image-container .presentation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1164,16 +1216,25 @@ footer .copyright {
   margin-bottom: 0.5em;
 }
 
-.image-container .card_visit .card_visit_id {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .image-container .card_visit .card_visit_id p {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 32px;
+  margin-bottom: 2em;
+}
+
+.image-container .card_visit .card_visit_id .card_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: revert-layer;
+          flex-direction: revert-layer;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .image-container .site h2 {

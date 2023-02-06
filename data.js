@@ -51,7 +51,7 @@ function afficher(user) {
         alt="card"
       />
       </div>
-      <p class="pBorder">Lorem ipsum dolor sit amet consectetur. Integer malesuada enim at quam lacinia dignissim viverra. Urna ipsum ut lectus mi eleifend turpis accumsan ipsum at. Porttitor sit ac platea orci enim in. Eu faucibus massa erat mattis vel netus sollicitudin praesent integer. Rhoncus lacus lorem eget in felis lorem aliquet dui. Egestas eget lectus nisi magna elit id elit felis.
+      <p class="pBorder">${user.description}
       </p>
 
       <h3>identité visuelle</h3>
@@ -65,7 +65,7 @@ function afficher(user) {
       <div class="identite">
 
       <h2>logo</h2>
-      <p>Lorem ipsum dolor sit amet consectetur. Integer malesuada enim at quam lacinia dignissim viverra. Urna ipsum ut lectus mi eleifend turpis accumsan ipsum at. Porttitor sit ac platea orci enim in. Eu faucibus massa erat mattis vel netus sollicitudin praesent integer. Rhoncus lacus lorem eget in felis lorem aliquet dui. Egestas eget lectus nisi magna elit id elit felis.
+      <p>${user.texte_logo}
       </p>
       </div>
       </div>
@@ -77,10 +77,10 @@ function afficher(user) {
             <div class="card_visit_p">
             <h2>carte de visite</h2>
             <p>
-            aliquet dui. Egestas eget lectus nisi magna elit id elit felis.
-            sollicitudin praesent integer. Rhoncus lacus lorem eget in felis lorem aliquet dui. Egestas eget lectus ni elit id elit felis.
+            ${user.texte_carte_visite}
             </p>
             </div>
+            <div class="card_img">
             <img
             class="card"
           src="../assets/img/${user.card_visit_recto}"
@@ -91,6 +91,8 @@ function afficher(user) {
         src="../assets/img/${user.card_visit_verso}"
           alt="card"
         />
+            </div>
+        
        </div>
        </div>
        <div class="site">
@@ -100,8 +102,7 @@ function afficher(user) {
        alt="card"
      />
      <p>
-     Lorem ipsum dolor sit amet consectetur. Integer malesuada enim at quam lacinia dignissim viverra. Urna ipsum ut lectus mi eleifend turpis accumsan ipsum at. Porttitor sit ac platea orci enim in. Eu faucibus massa erat mattis vel netus sollicitudin praesent integer. Rhoncus lacus lorem eget in felis lorem aliquet dui. Egestas eget lectus nisi magna elit id elit felis.
-
+     ${user.texte_site}
      </p>
       </div>
     </div>

@@ -1,168 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="shortcut icon" href="./assets/img/logo.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Greg Digital, Développeur Front-End</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="shortcut icon" href="./assets/img/logo.svg" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <link rel="stylesheet" href="./assets/styles/index.css" />
-  <title>Greg Digital, Développeur Front-End</title>
-</head>
-
-<body>
-  <header>
-    <img src="./assets/img/logo_nav.png" alt="logo Carrosserie Berrouet" />
-    <div class="menu_toggle">
-      <div class="oneRod"></div>
-      <div class="twoRod"></div>
-      <div class="threeRod"></div>
-    </div>
-    <div class="t">
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#works">Works</a>
-          </li>
-
-          <li>
-            <a href="#services">About Me</a>
-          </li>
-
-          <li>
-            <a href="#contact">contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section class="home">
-    <div class="background_black"></div>
-
-    <div class="share">
-      <a href="https://github.com/GregDigital" target="_blank"><i class="fa-brands fa-github"></i></a>
-    </div>
-    <div class="frame_right">
-      <img src="./assets/img/photo3d.png" alt="image logo" />
-    </div>
-    <svg id="svg" width="443" height="76" viewBox="0 0 643 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M1.625 93H40C47.1667 93 53.1458 90.6042 57.9375 85.8125C62.7708 81.2292 65.2292 75 65.3125 67.125C65.3125 62.375 64.125 57.9792 61.75 53.9375C59.2083 50.0208 55.4583 47.4167 50.5 46.125V45.875C53.125 44.625 55.3333 43.2292 57.125 41.6875C58.9167 40.2292 60.2917 38.6875 61.25 37.0625C63.125 33.6458 64.0208 30.0625 63.9375 26.3125C63.9375 18.9792 61.6667 13.0833 57.125 8.625C52.625 4.20833 45.8958 1.95833 36.9375 1.875H1.625V93ZM36.6875 52.5625C41.8125 52.6458 45.5625 54 47.9375 56.625C50.3125 59.2917 51.5 62.5 51.5 66.25C51.5 69.9167 50.3125 73.0833 47.9375 75.75C45.5625 78.4583 41.8125 79.8542 36.6875 79.9375H15.4375V52.5625H36.6875ZM35.375 14.1875C40.4167 14.2708 44.125 15.5 46.5 17.875C48.9167 20.4167 50.125 23.5208 50.125 27.1875C50.125 30.8542 48.9167 33.8958 46.5 36.3125C44.125 38.9375 40.4167 40.25 35.375 40.25H15.4375V14.1875H35.375Z"
-        stroke="white" stroke-width="3" />
-      <path d="M79.75 93H93.5625V1.875H79.75V93Z" stroke="white" stroke-width="3" />
-      <path d="M112.75 93H170.938V79.9375H126.562V53.1875H164.438V40.9375H126.562V14.9375H170.938V1.875H112.75V93Z"
-        stroke="white" stroke-width="3" />
-      <path d="M184 93H197.812V28.25H198.062L239.25 93H252.312V1.875H238.5V66.625H238.25L197 1.875H184V93Z"
-        stroke="white" stroke-width="3" />
-      <path d="M292.188 93H302.938L333.062 1.875H318.438L297.688 71.25H297.438L276.75 1.875H262.125L292.188 93Z"
-        stroke="white" stroke-width="3" />
-      <path d="M342.875 93H401.062V79.9375H356.688V53.1875H394.562V40.9375H356.688V14.9375H401.062V1.875H342.875V93Z"
-        stroke="white" stroke-width="3" />
-      <path
-        d="M414.125 93H427.938V28.25H428.188L469.375 93H482.438V1.875H468.625V66.625H468.375L427.125 1.875H414.125V93Z"
-        stroke="white" stroke-width="3" />
-      <path
-        d="M500.062 62.125C500.146 71.7083 503.312 79.3125 509.562 84.9375C515.688 90.7292 523.312 93.6667 532.438 93.75C541.729 93.6667 549.417 90.7292 555.5 84.9375C561.542 79.3125 564.646 71.7083 564.812 62.125V1.875H551V60.625C550.917 66.8333 549.167 71.5625 545.75 74.8125C542.25 78.2292 537.812 79.9375 532.438 79.9375C527.062 79.9375 522.667 78.2292 519.25 74.8125C515.75 71.5625 513.958 66.8333 513.875 60.625V1.875H500.062V62.125Z"
-        stroke="white" stroke-width="3" />
-      <path d="M582.375 93H640.562V79.9375H596.188V53.1875H634.062V40.9375H596.188V14.9375H640.562V1.875H582.375V93Z"
-        stroke="white" stroke-width="3" />
-    </svg>
-  </section>
-
-  <section id="works" class="realisation mask">
-    <h1>Works</h1>
-
-    <div class="container_realisation">
-      <div data-id="1" class="item right">
-        <img src="./assets/img/cover_sandra.png" alt="photo logo sandra pizel" />
+  <body>
+    <header>
+      <img src="./assets/img/logo_nav.png" alt="logo Carrosserie Berrouet" />
+      <div class="menu_toggle">
+        <div class="oneRod"></div>
+        <div class="twoRod"></div>
+        <div class="threeRod"></div>
       </div>
-      <div data-id="2" class="item right">
-        <img src="./assets/img/cover_berrouet.png" alt="photo logo carrosserie berrouet" />
+      <div class="t">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#works">Works</a>
+            </li>
+
+            <li>
+              <a href="#services">About Me</a>
+            </li>
+
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
-  <section id="apropos" class="apropos mask">
-    <h1>à propos</h1>
+    </header>
+    <section class="home">
+      <div class="background_black"></div>
 
+      <div class="share">
+        <a href="https://github.com/GregDigital" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div class="blurBlue"></div>
+      <div class="styles_noise__LtUjd" data-key="noise"></div>
+      <div class="frame_right">
+        <img src="./assets/img/photo3d.png" alt="image logo" />
+      </div>
+      <svg
+        id="svg"
+        width="443"
+        height="76"
+        viewBox="0 0 643 96"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.625 93H40C47.1667 93 53.1458 90.6042 57.9375 85.8125C62.7708 81.2292 65.2292 75 65.3125 67.125C65.3125 62.375 64.125 57.9792 61.75 53.9375C59.2083 50.0208 55.4583 47.4167 50.5 46.125V45.875C53.125 44.625 55.3333 43.2292 57.125 41.6875C58.9167 40.2292 60.2917 38.6875 61.25 37.0625C63.125 33.6458 64.0208 30.0625 63.9375 26.3125C63.9375 18.9792 61.6667 13.0833 57.125 8.625C52.625 4.20833 45.8958 1.95833 36.9375 1.875H1.625V93ZM36.6875 52.5625C41.8125 52.6458 45.5625 54 47.9375 56.625C50.3125 59.2917 51.5 62.5 51.5 66.25C51.5 69.9167 50.3125 73.0833 47.9375 75.75C45.5625 78.4583 41.8125 79.8542 36.6875 79.9375H15.4375V52.5625H36.6875ZM35.375 14.1875C40.4167 14.2708 44.125 15.5 46.5 17.875C48.9167 20.4167 50.125 23.5208 50.125 27.1875C50.125 30.8542 48.9167 33.8958 46.5 36.3125C44.125 38.9375 40.4167 40.25 35.375 40.25H15.4375V14.1875H35.375Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M79.75 93H93.5625V1.875H79.75V93Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M112.75 93H170.938V79.9375H126.562V53.1875H164.438V40.9375H126.562V14.9375H170.938V1.875H112.75V93Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M184 93H197.812V28.25H198.062L239.25 93H252.312V1.875H238.5V66.625H238.25L197 1.875H184V93Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M292.188 93H302.938L333.062 1.875H318.438L297.688 71.25H297.438L276.75 1.875H262.125L292.188 93Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M342.875 93H401.062V79.9375H356.688V53.1875H394.562V40.9375H356.688V14.9375H401.062V1.875H342.875V93Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M414.125 93H427.938V28.25H428.188L469.375 93H482.438V1.875H468.625V66.625H468.375L427.125 1.875H414.125V93Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M500.062 62.125C500.146 71.7083 503.312 79.3125 509.562 84.9375C515.688 90.7292 523.312 93.6667 532.438 93.75C541.729 93.6667 549.417 90.7292 555.5 84.9375C561.542 79.3125 564.646 71.7083 564.812 62.125V1.875H551V60.625C550.917 66.8333 549.167 71.5625 545.75 74.8125C542.25 78.2292 537.812 79.9375 532.438 79.9375C527.062 79.9375 522.667 78.2292 519.25 74.8125C515.75 71.5625 513.958 66.8333 513.875 60.625V1.875H500.062V62.125Z"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M582.375 93H640.562V79.9375H596.188V53.1875H634.062V40.9375H596.188V14.9375H640.562V1.875H582.375V93Z"
+          stroke="white"
+          stroke-width="3"
+        />
+      </svg>
+    </section>
 
-    <div class="container_apropos">
-      <p class="text_apropos">
+    <section id="works" class="realisation mask">
+      <h1>Works</h1>
 
-        Lorem ipsum dolor sit amet consectetur. Integer malesuada enim at quam lacinia dignissim viverra. Urna ipsum ut
-        lectus mi eleifend turpis accumsan ipsum at. Porttitor sit ac platea orci enim in. Eu faucibus massa erat mattis
-        vel netus sollicitudin praesent integer. Rhoncus lacus lorem eget in felis lorem aliquet dui. Egestas eget
-        lectus nisi magna elit id elit felis.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed mollitia excepturi porro, molestias
-        distinctio maiores quo dolor autem possimus fugit inventore ut similique culpa numquam? Fugit, dolorum nobis.
-        Magnam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, esse quam, architecto laboriosam veniam dolorum
-        earum provident fugit unde quo soluta possimus omnis, doloremque facere necessitatibus nihil maiores distinctio
-        consectetur.
+      <div class="container_realisation">
+        <div data-id="1" class="item right">
+          <img
+            src="./assets/img/cover_sandra.png"
+            alt="photo logo sandra pizel"
+          />
+        </div>
+        <div data-id="2" class="item right">
+          <img
+            src="./assets/img/cover_berrouet.png"
+            alt="photo logo carrosserie berrouet"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="apropos" class="apropos mask">
+      <h1>à propos</h1>
 
-      </p>
-    </div>
-  </section>
+      <div class="container_apropos">
+        <p class="text_apropos">
+          Lorem ipsum dolor sit amet consectetur. Integer malesuada enim at quam
+          lacinia dignissim viverra. Urna ipsum ut lectus mi eleifend turpis
+          accumsan ipsum at. Porttitor sit ac platea orci enim in. Eu faucibus
+          massa erat mattis vel netus sollicitudin praesent integer. Rhoncus
+          lacus lorem eget in felis lorem aliquet dui. Egestas eget lectus nisi
+          magna elit id elit felis. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Asperiores sed mollitia excepturi porro, molestias
+          distinctio maiores quo dolor autem possimus fugit inventore ut
+          similique culpa numquam? Fugit, dolorum nobis. Magnam! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Ut, esse quam, architecto
+          laboriosam veniam dolorum earum provident fugit unde quo soluta
+          possimus omnis, doloremque facere necessitatibus nihil maiores
+          distinctio consectetur.
+        </p>
+      </div>
+    </section>
 
+    <section id="contact" class="contact mask">
+      <h1>contact</h1>
 
-  <section id="contact" class="contact mask">
-    <h1>contact</h1>
-
-
-    <form enctype="multipart/form-data" action="form.php" method="POST" id="validForm">
-      <div class="formData" id="nameError">
-        <input name="name" id="name" type="text" class="feedback-input" placeholder="Nom" />
+      <form
+        enctype="multipart/form-data"
+        action="form.php"
+        method="POST"
+        id="validForm"
+      >
+        <div class="formData" id="nameError">
+          <input
+            name="name"
+            id="name"
+            type="text"
+            class="feedback-input"
+            placeholder="Nom"
+          />
+          <span></span>
+        </div>
+        <div class="formData" id="firstError">
+          <input
+            name="first"
+            id="first"
+            type="text"
+            class="feedback-input"
+            placeholder="Prénom"
+          />
+          <span></span>
+        </div>
+        <div class="formData" id="mobileError">
+          <input
+            name="mobile"
+            class="feedback-input"
+            id="mobile"
+            type="tel"
+            placeholder="Mobile"
+          />
+          <span></span>
+        </div>
+        <div class="formData" id="mailError">
+          <input
+            name="email"
+            id="email"
+            type="text"
+            class="feedback-input"
+            placeholder="Mail"
+          />
+          <span></span>
+        </div>
+        <textarea
+          name="message"
+          id="message"
+          class="feedback-input"
+          placeholder="Message"
+        ></textarea>
         <span></span>
-      </div>
-      <div class="formData" id="firstError">
-        <input name="first" id="first" type="text" class="feedback-input" placeholder="Prénom" />
-        <span></span>
-      </div>
-      <div class="formData" id="mobileError">
-        <input name="mobile" class="feedback-input" id="mobile" type="tel" placeholder="Mobile" />
-        <span></span>
-      </div>
-      <div class="formData" id="mailError">
-        <input name="email" id="email" type="text" class="feedback-input" placeholder="Mail" />
-        <span></span>
-      </div>
-      <textarea name="message" id="message" class="feedback-input" placeholder="Message"></textarea>
-      <span></span>
 
-      <div class="button-area">
-        <input id="btnSub" type="submit" name="envoyer" value="Envoyer" />
-        <span></span>
+        <div class="button-area">
+          <input id="btnSub" type="submit" name="envoyer" value="Envoyer" />
+          <span></span>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <span class="copyright">©Greg Digital 2023</span>
+      <div class="content_logo">
+        <a href="#" title="aller à la section 1 à l'accueil"
+          ><img
+            src="./assets/img/logo_nav.png"
+            alt="Carrosserie Berrouet et fils"
+        /></a>
       </div>
-    </form>
 
-  </section>
-
-  <footer>
-    <span class="copyright">©Greg Digital 2023</span>
-    <div class="content_logo">
-      <a href="#" title="aller à la section 1 à l'accueil"><img src="./assets/img/logo_nav.png"
-          alt="Carrosserie Berrouet et fils" /></a>
+      <a
+        title="aller dans la page des mentions légales"
+        href="./pages/mentions_legales.html"
+        ><span class="mention pointer">Mentions légales</span></a
+      >
+    </footer>
+    <div class="lightbox t">
+      <div class="close"></div>
+      <div class="cont"></div>
     </div>
-
-    <a title="aller dans la page des mentions légales" href="./pages/mentions_legales.html"><span
-        class="mention pointer">Mentions légales</span></a>
-  </footer>
-  <div class="lightbox t">
-    <div class="close"></div>
-    <div class="cont"></div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-  <script src="burger.js"></script>
-  <script src="form.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script src="burger.js"></script>
+    <script src="form.js"></script>
+  </body>
 </html>
