@@ -476,14 +476,12 @@ header .t nav ul a:hover::after {
 
 .apropos {
   position: relative;
-  margin-top: 3em;
 }
 
 .apropos h1 {
   font-size: 1.2em;
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
-  margin-top: 3em;
   margin-bottom: 3em;
   text-align: center;
 }
@@ -676,7 +674,8 @@ header .t nav ul a:hover::after {
 
 .realisation h1 {
   font-size: 1.2em;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #FFE990;
   text-transform: uppercase;
   margin-top: 1em;
   text-align: center;
@@ -704,34 +703,34 @@ header .t nav ul a:hover::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 6vmin;
   overflow: hidden;
-  -webkit-transform: skew(8deg);
-          transform: skew(8deg);
 }
 
 .realisation .right {
-  width: 180px;
-  height: 490px;
+  width: 744px;
+  height: 220px;
+  margin-bottom: 5em;
 }
 
 .realisation .right img {
+  border-radius: 35px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 .realisation .right img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -773,212 +772,121 @@ header .t nav ul a:hover::after {
 
 .contact {
   padding-bottom: 1em;
+  margin-top: 5em;
 }
 
 .contact h1 {
   font-size: 1.2em;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  margin-top: 1em;
+  margin-bottom: 5em;
   text-align: center;
 }
 
-.contact h1 img:first-child {
-  margin-right: 0.5em;
+.contact form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact h1 img:last-child {
-  margin-left: 0.5em;
-}
-
-.contact .car {
-  margin: 0 auto 0 auto;
-  width: 40%;
-}
-
-.contact .car img {
-  width: 100%;
-}
-
-.contact .map {
-  position: relative;
-  margin-top: 2em;
-  margin-bottom: 10em;
-}
-
-.contact .map img {
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.contact .map img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-}
-
-.contact .map .form {
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
-  opacity: 0.8;
-  position: absolute;
-  z-index: 1;
-  top: -70px;
-  right: 4%;
-  width: 320px;
-  height: 450px;
-  background-color: #050505;
-  border: solid 0.3px red;
-}
-
-.contact .map form {
-  position: absolute;
-  z-index: 1;
-  top: -50px;
-  right: 4%;
-  width: 300px;
-  height: 400px;
-}
-
-.contact .map .feedback-input {
-  color: white;
-  font-weight: 400;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid 1px #FFE990;
-  background-color: transparent;
-  font-family: "Nunito", sans-serif;
-  font-size: 0.8em;
-  padding: 0.2em;
-  margin-bottom: 14px;
-  width: 90%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.contact .map .feedback-input:nth-child(5) {
-  background: rgba(39, 39, 39, 0.486);
-  border: none;
-  border-radius: 1em;
-}
-
-.contact .map .select-picture {
+.contact .formData {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact .map .select-picture span {
-  font-family: "Nunito", sans-serif;
-  font-size: 0.9em;
-  margin-left: 0.5em;
-  color: #575757;
-  font-style: italic;
-}
-
-.contact .map .select-picture span ol li p {
-  font-family: "Nunito", sans-serif;
-  font-size: 0.9em;
-  margin-left: 0.5em;
-  color: #575757;
-  font-style: italic;
-}
-
-.contact .map .file-upload {
-  height: 50px;
-  width: 50px;
-  border-radius: 100px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #FFE990;
-  overflow: hidden;
-  background-size: 100% 200%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  color: #ffffff;
-  font-size: 0.9em;
-}
-
-.contact .map .file-upload input[type="file"] {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
+  font-family: satoshi,sans-serif;
+  font-style: normal;
+  color: #FFE990;
+  height: 62px;
+  border-radius: 42px;
+  padding: 16px 30px;
+  border: 1px solid #72D1EC;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  font-size: inherit;
   cursor: pointer;
+  margin-bottom: 2em;
 }
 
-.contact .map textarea {
+.contact textarea {
   height: 150px;
   line-height: 150%;
   resize: vertical;
   resize: none;
 }
 
-.contact .map #message {
+.contact #message {
   padding: 1em;
+  font-family: satoshi,sans-serif;
+  font-style: normal;
+  color: #FFE990;
+  height: 100px;
+  border-radius: 42px;
+  padding: 16px 30px;
+  border: 1px solid #72D1EC;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  font-size: inherit;
+  cursor: pointer;
+  margin-bottom: 2em;
 }
 
-.contact .map #message::-webkit-input-placeholder {
+.contact #message::-webkit-input-placeholder {
   text-align: center;
 }
 
-.contact .map #message:-ms-input-placeholder {
+.contact #message:-ms-input-placeholder {
   text-align: center;
 }
 
-.contact .map #message::-ms-input-placeholder {
+.contact #message::-ms-input-placeholder {
   text-align: center;
 }
 
-.contact .map #message::placeholder {
+.contact #message::placeholder {
   text-align: center;
 }
 
-.contact .map input[type="text"],
-.contact .map textarea {
+.contact input[type="text"], .contact input[type="tel"],
+.contact textarea {
   outline: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  padding: 0 30px;
+  font-family: satoshi,sans-serif;
+  font-style: normal;
+  color: #FFE990;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
 }
 
-.contact .map .errorText {
+.contact .errorText {
   font-family: "Nunito", sans-serif;
   color: red;
   font-size: 12px;
   display: inline-block;
 }
 
-.contact .map .validText {
+.contact .validText {
   font-family: "Nunito", sans-serif;
   color: red;
   font-size: 12px;
   display: inline-block;
 }
 
-.contact .map .text-control {
+.contact .text-control {
   margin: 0;
   padding: 8px;
   width: 100%;
@@ -987,7 +895,7 @@ header .t nav ul a:hover::after {
   height: 48px;
 }
 
-.contact .map .spanError {
+.contact .spanError {
   font-family: "Nunito", sans-serif;
   font-size: 0.8em;
   color: #e54858;
@@ -996,7 +904,7 @@ header .t nav ul a:hover::after {
   transition: 0.3s;
 }
 
-.contact .map .spanOk {
+.contact .spanOk {
   display: none;
   font-family: "Nunito", sans-serif;
   font-size: 0.8em;
@@ -1005,7 +913,7 @@ header .t nav ul a:hover::after {
   transition: 0.3s;
 }
 
-.contact .map input[type="submit"] {
+.contact input[type="submit"] {
   outline: none;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1017,40 +925,8 @@ header .t nav ul a:hover::after {
   cursor: pointer;
 }
 
-.contact .map .button-area {
+.contact .button-area {
   text-align: center;
-}
-
-@media only screen and (max-width: 900px) {
-  .contact {
-    height: auto;
-  }
-  .contact .map .form {
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    opacity: 0.8;
-    position: absolute;
-    z-index: 1;
-    top: 71%;
-    left: 50%;
-    width: 90%;
-    height: 400px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background-color: #050505;
-    border: solid 0.3px red;
-  }
-  .contact .map form {
-    position: absolute;
-    z-index: 1;
-    top: 82%;
-    left: 50%;
-    width: 90%;
-    height: 400px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center;
-  }
 }
 
 footer {
@@ -1123,11 +999,12 @@ footer .copyright {
 }
 
 .lightbox {
+  margin: 0;
   display: none;
   place-items: center;
   z-index: 1000;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.883);
+  background-color: black;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1200,16 +1077,126 @@ footer .copyright {
 }
 
 .cont {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1rem;
-  --position: 50%;
+  width: 80vw;
+  margin-top: 5em;
 }
 
-.image-container {
-  width: 80vw;
-  height: 80vh;
-  aspect-ratio: 1/1;
+.image-container .presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid 1px white;
+  padding-bottom: 5em;
+  margin-bottom: 5em;
+}
+
+.image-container .presentation .titre h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  margin-bottom: 0.5em;
+}
+
+.image-container .presentation .titre h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #383838;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.image-container .presentation img {
+  width: 626px;
+  height: 345px;
+}
+
+.image-container .pBorder {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 32px;
+  border-bottom: solid 1px white;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.image-container h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 2em;
+}
+
+.image-container .presentation_id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5em;
+}
+
+.image-container .presentation_id .identite h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #383838;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+
+.image-container .presentation_id .identite p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 32px;
+}
+
+.image-container .card_visit {
+  border-bottom: solid 1px white;
+  padding-bottom: 5em;
+  margin-bottom: 5em;
+}
+
+.image-container .card_visit h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #383838;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+
+.image-container .card_visit .card_visit_id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-container .card_visit .card_visit_id p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 32px;
+}
+
+.image-container .site h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #383838;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+
+.image-container .site img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 5em;
+}
+
+.image-container .site p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 5em;
 }
 
 .lightbox-close {
@@ -1219,95 +1206,16 @@ footer .copyright {
   top: 0;
 }
 
-.fa-xmark-large {
-  color: #fff;
-  font-size: 3em;
-}
-
 main {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  min-height: 100vh;
-}
-
-.slider-image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.image-before {
-  position: absolute;
-  inset: 0;
-  width: var(--position);
-}
-
-.slider {
-  position: absolute;
-  inset: 0;
-  cursor: pointer;
-  opacity: 0;
-  /* for Firefox */
-  width: 100%;
-  height: 100%;
-}
-
-.slider:focus-visible ~ .slider-button {
-  outline: 5px solid black;
-  outline-offset: 3px;
-}
-
-.slider-line {
-  position: absolute;
-  inset: 0;
-  width: 0.2rem;
-  height: 100%;
-  background-color: #fff;
-  /* z-index: 10; */
-  left: var(--position);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  pointer-events: none;
-}
-
-.slider-button {
-  position: absolute;
-  background-color: #fff;
-  color: black;
-  padding: 0.5rem;
-  border-radius: 100vw;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  top: 50%;
-  left: var(--position);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  pointer-events: none;
-  /* z-index: 100; */
 }
 
 @media only screen and (max-width: 900px) {
   .close {
     right: 7px;
     top: 10px;
-  }
-  .image-container {
-    width: 90vw;
-    height: 80vh;
-    aspect-ratio: 1/1;
-  }
-}
-
-@media (orientation: landscape) {
-  .image-container {
-    width: 85vw;
-    height: 75vh;
-    aspect-ratio: 1/1;
   }
 }
 

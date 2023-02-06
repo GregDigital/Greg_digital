@@ -1,129 +1,47 @@
 .contact {
-
 padding-bottom: 1em;
+margin-top: 5em;
+
   h1 {
     font-size: 1.2em;
-    font-family: $font1;
+    font-family: $font2;
     text-transform: uppercase;
-    margin-top: 1em;
+    margin-bottom: 5em;
     text-align: center;
-    img:first-child {
-      margin-right: 0.5em;
-    }
-    img:last-child {
-      margin-left: 0.5em;
-    }
+ 
   }
 
-  .car {
-    margin: 0 auto 0 auto;
-    width: 40%;
-    img {
-      width: 100%;
-    }
+  form{
+ width: 50%;
+ margin-left: auto;
+ margin-right: auto;
+
   }
-  .map {
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 10em;
-    img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      margin: 0;
-      filter: grayscale(100%);
-      &:hover {
-        filter: grayscale(0%);
-      }
-    }
-    .form {
-      filter: blur(3px);
-      opacity: 0.8;
-      position: absolute;
-      z-index: 1;
-      top: -70px;
-      right: 4%;
-      width: 320px;
-      height: 450px;
-      background-color: #050505;
-      border: solid 0.3px red;
-    }
-    form {
-      position: absolute;
-      z-index: 1;
-      top: -50px;
-      right: 4%;
-      width: 300px;
-      height: 400px;
-    }
 
-    .feedback-input {
-      color: rgb(255, 255, 255);
-      font-weight: 400;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-bottom: solid 1px $yellow;
-      background-color: transparent;
-      font-family: $font1;
-      font-size: 0.8em;
-      padding: 0.2em;
-      margin-bottom: 14px;
-      width: 90%;
-      box-sizing: border-box;
-      outline: none;
-      appearance: none;
-    }
-    .feedback-input:nth-child(5) {
-      background: rgba(39, 39, 39, 0.486);
-      border: none;
-      border-radius: 1em;
-    }
-    .select-picture {
-      display: flex;
-      align-items: center;
-      span  {
-        font-family: $font1;
-        font-size: 0.9em;
-        margin-left: 0.5em;
-        color: #575757;
-        font-style: italic;
-        ol li p{
-          font-family: $font1;
-        font-size: 0.9em;
-        margin-left: 0.5em;
-        color: #575757;
-        font-style: italic;
-        }
+.formData{
 
-      }
-    }
-    .file-upload {
-      height: 50px;
-      width: 50px;
-      border-radius: 100px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid $yellow;
-      overflow: hidden;
-      background-size: 100% 200%;
-      transition: all 1s;
-      color: #ffffff;
+  display: flex;
+  font-family: satoshi,sans-serif;
+  font-style: normal;
+  color: $yellow;
+  height: 62px;
+  border-radius: 42px;
+  padding: 16px 30px;
+  border: 1px solid #72D1EC;
+  flex-shrink: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: inherit;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
 
-      font-size: 0.9em;
 
-      input[type="file"] {
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        opacity: 0;
-        cursor: pointer;
-      }
-    }
+
+
+
+
+   
     textarea {
       height: 150px;
       line-height: 150%;
@@ -134,16 +52,41 @@ padding-bottom: 1em;
   
     #message {
       padding: 1em;
+      font-family: satoshi,sans-serif;
+      font-style: normal;
+      color: $yellow;
+      height: 100px;
+      border-radius: 42px;
+      padding: 16px 30px;
+      border: 1px solid #72D1EC;
+      flex-shrink: 0;
+      -webkit-user-select: none;
+      user-select: none;
+      font-size: inherit;
+      cursor: pointer;
+      margin-bottom: 2em;
+
       &::placeholder{
         
      text-align: center;
        
       }
     }
-    input[type="text"],
+    input[type="text"],input[type="tel"],
     textarea {
       outline: none;
       appearance: none;
+      width: 100%;
+      height: 100%;
+      border-radius: 34px;
+      padding: 0 30px;
+      font-family: satoshi,sans-serif;
+      font-style: normal;
+      color: $yellow;
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+    
     }
     .errorText{
       font-family: $font1;
@@ -198,40 +141,16 @@ padding-bottom: 1em;
     .button-area {
       text-align: center;
     }
-  }
+  
 }
 @media only screen and (max-width: 900px) {
    
   .contact {
 
-    height:auto;
-.map{
 
-      .form {
-        -webkit-filter: blur(3px);
-        filter: blur(3px);
-        opacity: 0.8;
-        position: absolute;
-        z-index: 1;
-        top: 71%;
-left: 50%;
-width: 90%;
-height: 400px;
-transform: translate(-50%,-50%);
-        background-color: #050505;
-        border: solid 0.3px red;
-      }
-      form {
-        position: absolute;
-        z-index: 1;
-        top: 82%;
-        left: 50%;
-        width:90%;
-        height: 400px;
-        transform: translate(-50%,-50%);
-        text-align: center;
-      }
-    }
+
+
+  
     
 }
 }
