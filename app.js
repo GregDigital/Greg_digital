@@ -20,17 +20,6 @@ window.addEventListener("load", () => {
 });
 // Animation lettre bienvenue
 
-new Vivus(
-  "svg",
-  {
-    delay: 0,
-    duration: 120,
-  },
-  function (obj) {
-    obj.el.classList.add("finished");
-  }
-);
-
 // Animation scroll reveal
 
 gsap.registerPlugin(ScrollTrigger);
