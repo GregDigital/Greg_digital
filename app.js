@@ -1,3 +1,23 @@
+window.onscroll = function () {
+  var img = document.getElementById("myImg");
+  var y = window.pageYOffset;
+  if (y > 0) {
+    img.style.width = 100 - y / 10 + "%";
+  } else {
+    img.style.width = "100%";
+  }
+};
+
+const loader = document.querySelector(".loader");
+window.addEventListener("load", () => {
+  if (localStorage.getItem("premierChargement") === null) {
+    localStorage.setItem("premierChargement", "done");
+  } else {
+    setTimeout(() => {
+      loader.classList.add("fondu-out");
+    }, 5000);
+  }
+});
 // Animation lettre bienvenue
 
 new Vivus(

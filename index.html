@@ -19,8 +19,28 @@
   </head>
 
   <body>
+    <div class="loader">
+      <img src="./assets/img/logo_loader.png" alt="logo" />
+      <div class="gregdigital">
+        <div class="greg">
+          <span class="lettre">G</span>
+          <span class="lettre">R</span>
+          <span class="lettre">E</span>
+          <span class="lettre">G</span>
+        </div>
+        <div class="digital">
+          <span class="lettre">D</span>
+          <span class="lettre">I</span>
+          <span class="lettre">G</span>
+          <span class="lettre">I</span>
+          <span class="lettre">T</span>
+          <span class="lettre">A</span>
+          <span class="lettre">L</span>
+        </div>
+      </div>
+    </div>
     <header>
-      <img src="./assets/img/logo_nav.png" alt="logo Carrosserie Berrouet" />
+      <img src="./assets/img/logo_nav.png" alt="logo GregDigital" />
       <div class="menu_toggle">
         <div class="oneRod"></div>
         <div class="twoRod"></div>
@@ -37,7 +57,7 @@
             </li>
 
             <li>
-              <a href="#services">About Me</a>
+              <a href="#aboutme">About Me</a>
             </li>
 
             <li>
@@ -47,7 +67,7 @@
         </nav>
       </div>
     </header>
-    <section class="home">
+    <section class="home section">
       <div class="background_black"></div>
 
       <div class="share">
@@ -58,7 +78,12 @@
       <div class="blurBlue"></div>
       <div class="styles_noise__LtUjd" data-key="noise"></div>
       <div class="frame_right">
-        <img src="./assets/img/photo3d.png" alt="image logo" />
+        <img
+          id="myImg"
+          class="border_radius"
+          src="./assets/img/photo3d.png"
+          alt="image logo"
+        />
       </div>
       <svg
         id="svg"
@@ -116,7 +141,7 @@
       </svg>
     </section>
 
-    <section id="works" class="realisation mask">
+    <section id="works" class="realisation mask section">
       <h1>Works</h1>
 
       <div class="container_realisation">
@@ -134,7 +159,7 @@
         </div>
       </div>
     </section>
-    <section id="apropos" class="apropos mask">
+    <section id="aboutme" class="apropos mask section">
       <h1>à propos</h1>
 
       <div class="container_apropos">
@@ -156,7 +181,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact mask">
+    <section id="contact" class="contact mask section">
       <h1>contact</h1>
 
       <form
