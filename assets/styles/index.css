@@ -361,18 +361,6 @@ header .t nav ul a:hover::after {
   width: 100vw;
 }
 
-.home .glass {
-  width: 500px;
-  height: 400px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
 .home .border_radius {
   border-radius: 50%;
   width: 100%;
@@ -758,7 +746,22 @@ header .t nav ul a:hover::after {
 }
 
 .apropos {
+  height: 100vh;
   position: relative;
+}
+
+.apropos .blurBlueSmall {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #103D47;
+  border-radius: 100%;
+  height: 40%;
+  width: 40%;
+  -webkit-filter: blur(204px);
+  filter: blur(204px);
 }
 
 .apropos h1 {
@@ -778,47 +781,24 @@ header .t nav ul a:hover::after {
   margin-left: 0.5em;
 }
 
-.apropos .img_garage {
-  position: absolute;
-  bottom: -50px;
-  background-image: url(../img/garage.jpg);
-  background-attachment: fixed;
-  height: 100%;
-  opacity: 0.1;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.container_apropos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.apropos .b {
-  position: absolute;
-  width: 100%;
-  height: 46px;
-  background: black;
-  border-radius: 100px;
-  -webkit-filter: blur(5px);
-  filter: blur(10px);
-  top: -17px;
-}
-
-.apropos .blur {
-  position: absolute;
-  width: 100%;
-  height: 76px;
-  background: black;
-  border-radius: 100px;
-  -webkit-filter: blur(5px);
-  filter: blur(15px);
-  bottom: -18px;
-}
-
-.container_apropos .text_apropos {
-  margin: 4em auto 0 auto;
-  width: 80%;
-  text-align: justify;
-  line-height: 2.2;
-  letter-spacing: 1px;
+.container_apropos .glass {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 @media only screen and (max-width: 990px) {
