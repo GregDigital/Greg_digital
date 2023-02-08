@@ -1,3 +1,4 @@
+/*
 window.onscroll = function () {
   var img = document.getElementById("myImg");
   var y = window.pageYOffset;
@@ -7,7 +8,7 @@ window.onscroll = function () {
     img.style.width = "100%";
   }
 };
-
+*/
 const loader = document.querySelector(".loader");
 window.addEventListener("load", () => {
   if (localStorage.getItem("premierChargement") === null) {

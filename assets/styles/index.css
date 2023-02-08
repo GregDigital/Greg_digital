@@ -40,10 +40,17 @@ body {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,6 +87,25 @@ body {
   margin-bottom: 150px;
   -webkit-animation: flash 1.2s linear infinite;
           animation: flash 1.2s linear infinite;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container .section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 @-webkit-keyframes flash {
@@ -368,12 +394,6 @@ header .t nav ul a:hover::after {
   transition: all 0.5s ease;
 }
 
-.home #myImg {
-  width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 .home .share {
   z-index: 2;
   position: fixed;
@@ -548,45 +568,11 @@ header .t nav ul a:hover::after {
           filter: blur(204px);
 }
 
-.home .frame_right {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.home .frame_left {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.home .vertical {
-  font-family: "Roboto", sans-serif;
-  border-right: 2px solid #a90000;
-  color: #FFE990;
-  height: 50px;
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  -webkit-animation-name: vertical;
-          animation-name: vertical;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-size: 0.8em;
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
-  text-orientation: mixed;
-  vertical-align: sub;
-  text-align: center;
-  letter-spacing: 4px;
+.home .frame_right img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @-webkit-keyframes vertical {
