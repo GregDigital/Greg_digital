@@ -9,6 +9,27 @@ window.onscroll = function () {
   }
 };
 */
+
+//Animation texte accueil
+const writer = document.querySelector("#writer");
+
+new Typewriter(writer, {
+  loop: true,
+  deleteSpeed: 60,
+})
+  .changeDelay(60)
+  .typeString("Hello,<br> Moi c'est Greg<br>")
+  .pauseFor(300)
+  .typeString("<span style='color: #FFE990'>Designer,</span>")
+  .pauseFor(1000)
+  .deleteChars(10)
+  .typeString(
+    "<span style='color: #FFE990'><br>Dev Front-End Javascript-React</span>"
+  )
+  .pauseFor(1000)
+
+  .start();
+
 const loader = document.querySelector(".loader");
 window.addEventListener("load", () => {
   if (localStorage.getItem("premierChargement") === null) {
