@@ -108,82 +108,53 @@ body {
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-@-webkit-keyframes flash {
-  0% {
-    color: #ffffff;
-  }
-  90% {
-    color: #ffffff28;
-    text-shadow: none;
-  }
-  100% {
-    color: #ffffff;
-  }
-}
-
+/*
 @keyframes flash {
   0% {
-    color: #ffffff;
+      color: #ffffff;
+    
   }
   90% {
-    color: #ffffff28;
-    text-shadow: none;
+      color: #ffffff28;
+      text-shadow: none;
   }
   100% {
-    color: #ffffff;
+      color: #ffffff;
+    
   }
 }
 
-.lettre:nth-child(1) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+.lettre:nth-child(1){
+  animation-delay: 0.1s;
 }
-
-.lettre:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+.lettre:nth-child(2){
+  animation-delay: 0.2s;
 }
-
-.lettre:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+.lettre:nth-child(3){
+  animation-delay: 0.3s;
 }
-
-.lettre:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+.lettre:nth-child(4){
+  animation-delay: 0.4s;
 }
-
-.lettre:nth-child(5) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+.lettre:nth-child(5){
+  animation-delay: 0.5s;
 }
-
-.lettre:nth-child(6) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+.lettre:nth-child(6){
+  animation-delay: 0.6s;
 }
-
-.lettre:nth-child(7) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+.lettre:nth-child(7){
+  animation-delay: 0.7s;
 }
-
-.lettre:nth-child(8) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+.lettre:nth-child(8){
+  animation-delay: 0.8s;
 }
-
-.lettre:nth-child(9) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+.lettre:nth-child(9){
+  animation-delay: 0.9s;
 }
-
-.lettre:nth-child(10) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.lettre:nth-child(10){
+  animation-delay: 1s;
 }
-
+*/
 .fondu-out {
   opacity: 0;
   -webkit-transition: opacity 0.8s ease-out;
@@ -1182,7 +1153,12 @@ footer .copyright {
   place-items: center;
   z-index: 1000;
   min-height: 100vh;
-  background-color: black;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.058), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1296,10 +1272,12 @@ footer .copyright {
 .image-container .pBorder {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 32px;
   border-bottom: solid 1px white;
   padding-bottom: 2em;
   margin-bottom: 2em;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
 }
 
 .image-container h3 {
@@ -1330,7 +1308,9 @@ footer .copyright {
 .image-container .presentation_id .identite p {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 32px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
 }
 
 .image-container .card_visit {
@@ -1351,7 +1331,9 @@ footer .copyright {
 .image-container .card_visit .card_visit_id p {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 32px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
   margin-bottom: 2em;
 }
 
@@ -1388,7 +1370,9 @@ footer .copyright {
 .image-container .site p {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 32px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
   margin-bottom: 5em;
 }
 

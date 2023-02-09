@@ -14,7 +14,7 @@ window.onscroll = function () {
 const writer = document.querySelector("#writer");
 
 new Typewriter(writer, {
-  loop: true,
+  //loop: true,
   deleteSpeed: 60,
 })
   .changeDelay(60)
