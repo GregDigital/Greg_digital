@@ -23,6 +23,7 @@ filter: blur(204px);
     font-family: $font1;
     color: $yellow;
     text-transform: uppercase;
+    margin-top: 2em;
     margin-bottom: 3em;
     text-align: center;
     img:first-child {
@@ -41,17 +42,70 @@ filter: blur(204px);
 
 
   .glass{
-    width: 300px;
-    height: 400px;
+    width: 70%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    .apropos_prensentation_container {
+      display: flex;
+      margin-bottom: 2em;
+      align-items: center;
+  
+    .apropos_titre{
+width: 45%;
+    h2{
+      font-family: $font2;
+      opacity: 0.3;
+      font-size: 7em;
+    }
+    p{
+      font-family: $font2;
+      opacity: 0.5;
+      font-size: 3em;
+    }
+  }
+  .apropos_presentation{
+    width: 45%;
+    .apropos_who{
+      display: flex;
+      margin-bottom: 2em;
+    img{
+      background-color: rgba(255, 255, 255, 0.563);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+
+    }
+    h3{
+      align-items: flex-end;
+display: flex;
+      font-family: $font2;
+      color: rgb(255, 255, 255);
+      font-size: 2em;
+    }
+  }
+
+    p{
+      font-family: $font2;
+      color: rgb(255, 255, 255);
+      font-size: 1em;
+      letter-spacing: 1px;
+      line-height: 2;
+    }
+  }
 }
 
-
+}
+.skills{
+  h2{
+    font-family: $font2;
+    opacity: 0.3;
+    font-size: 7em;
+  }
+}
 }
 
 @media only screen and (max-width: 990px) {

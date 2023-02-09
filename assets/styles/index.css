@@ -162,12 +162,14 @@ body {
   z-index: -10;
 }
 
+/*
 .mask {
   visibility: hidden;
   position: relative;
+
   overflow: hidden;
 }
-
+*/
 .true {
   overflow: hidden;
 }
@@ -742,6 +744,7 @@ header .t nav ul a:hover::after {
   font-family: "Nunito", sans-serif;
   color: #FFE990;
   text-transform: uppercase;
+  margin-top: 2em;
   margin-bottom: 3em;
   text-align: center;
 }
@@ -763,8 +766,7 @@ header .t nav ul a:hover::after {
 }
 
 .container_apropos .glass {
-  width: 300px;
-  height: 400px;
+  width: 70%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -772,6 +774,76 @@ header .t nav ul a:hover::after {
   border: 1px solid rgba(255, 255, 255, 0.18);
   -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.container_apropos .glass .apropos_prensentation_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_titre {
+  width: 45%;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_titre h2 {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.3;
+  font-size: 7em;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_titre p {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.5;
+  font-size: 3em;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_presentation {
+  width: 45%;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who img {
+  background-color: rgba(255, 255, 255, 0.563);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who h3 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 2em;
+}
+
+.container_apropos .glass .apropos_prensentation_container .apropos_presentation p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.container_apropos .skills h2 {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.3;
+  font-size: 7em;
 }
 
 @media only screen and (max-width: 990px) {
@@ -1294,6 +1366,13 @@ footer .copyright {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image-container .presentation_id .identite {
+  width: 50%;
 }
 
 .image-container .presentation_id .identite h2 {
@@ -1311,6 +1390,12 @@ footer .copyright {
   font-size: 1.2em;
   letter-spacing: 2px;
   line-height: 2;
+}
+
+.image-container .presentation_id img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 50%;
 }
 
 .image-container .card_visit {
@@ -1349,6 +1434,11 @@ footer .copyright {
           flex-direction: revert-layer;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.image-container .card_visit .card_visit_id .card_img img {
+  background-color: #171717;
+  padding: 1em;
 }
 
 .image-container .site h2 {

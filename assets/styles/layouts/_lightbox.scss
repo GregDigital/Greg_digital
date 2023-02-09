@@ -129,8 +129,10 @@ h3{
 .presentation_id{
   display: flex;
   margin-bottom: 5em;
+  justify-content: space-between;
 
   .identite{
+    width: 50%;
     h2{
       font-family: $font2;
       font-weight: 200;
@@ -148,6 +150,10 @@ h3{
     
     
     }
+  }
+  img{
+    object-fit: contain;
+max-width: 50%;
   }
 }
 .card_visit{
@@ -181,6 +187,10 @@ h3{
       justify-content: space-around;
       flex-direction: revert-layer;
       flex-wrap: wrap;
+      img{
+        background-color: #171717;
+        padding: 1em;
+      }
     }
   }
 }
@@ -241,6 +251,10 @@ main {
   top: 10px;
 }
 .image-container {
+
+
+
+  
 
 }
 }

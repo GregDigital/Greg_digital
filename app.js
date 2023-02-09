@@ -1,15 +1,3 @@
-/*
-window.onscroll = function () {
-  var img = document.getElementById("myImg");
-  var y = window.pageYOffset;
-  if (y > 0) {
-    img.style.width = 100 - y / 10 + "%";
-  } else {
-    img.style.width = "100%";
-  }
-};
-*/
-
 //Animation texte accueil
 const writer = document.querySelector("#writer");
 
@@ -43,7 +31,7 @@ window.addEventListener("load", () => {
 // Animation lettre bienvenue
 
 // Animation scroll reveal
-
+/*
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.config({
@@ -80,3 +68,4 @@ masks.forEach((mask) => {
     opacity: 1,
   });
 });
+*/

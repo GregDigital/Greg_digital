@@ -16,12 +16,15 @@
         {
             "id": 2,
             "h1": "Carrosserie Berrouet&Fils",
-            "description": "texte",
+            "description": "Fondée en 1985, cette entreprise familiale n'avait jusqu'à présent eu que très peu de communication visuelle. En effet, seule une carte de visite avait été élaborée et n'a jamais été améliorée depuis. Cependant, dans le but de moderniser l'image de la carrosserie, M. Berrouet fils, qui a pris la direction de l'entreprise, a choisi d'adopter une nouvelle stratégie de communication.",
             "card": "card_berrouet.png",
+            "texte_logo":"Pour la typographie, une police racée et dynamique a été choisie, dans les tons rouges et noirs, qui sont fréquemment utilisés dans l'industrie automobile. Le véhicule représenté est la voiture préférée de M. Berrouet. En guise de trappe à essence, une croix basque rappelle sa fierté de vivre au Pays Basque. Un pistolet à peinture est utilisé comme symbole pour rappeler l'essence même de l'entreprise et remplacer le traditionnel ''&''." ,
             "card_logo": "card_logo_berrouet.png",
+            "texte_carte_visite":"Concernant le design, le logo de la carrosserie avec les coordonnées apparaît sur le recto, alors qu’une zone pour prendre RDV est située au verso. Le format classique a été choisi en harmonie avec la longueur de la voiture." ,
             "card_visit_recto": "recto_berrouet.png",
             "card_visit_verso": "verso_berrouet.png",
-            "imac": "imac_berrouet.png"
+            "imac": "imac_berrouet.png",
+            "texte_site":"Le site web offre une expérience visuelle immersive grâce à une vidéo en fond sur la page d'accueil. Deux versions ont été conçues, une pour ordinateur et une pour mobile, pour une expérience optimale sur tous les appareils. L'animation est gérée par du JavaScript pour un effet dynamique. La galerie d'images est optimisée pour montrer les véhicules avant et après l'intervention, sans duplication de code. Pour soumettre une demande, un formulaire en PHP est disponible. Le référencement naturel est également ciblé pour une meilleure visibilité en ligne."
         }
     ]
 }

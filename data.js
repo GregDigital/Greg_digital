@@ -57,17 +57,18 @@ function afficher(user) {
       <h3>identité visuelle</h3>
 
       <div class="presentation_id">
-      <img
-        class="card"
-       src="../assets/img/${user.card_logo}"
-        alt="card"
-      />
+     
       <div class="identite">
 
       <h2>logo</h2>
       <p>${user.texte_logo}
       </p>
       </div>
+      <img
+      class="card"
+     src="../assets/img/${user.card_logo}"
+      alt="card"
+    />
       </div>
 
  <div class="card_visit">
