@@ -1,4 +1,5 @@
 //Animation texte accueil
+/*
 const writer = document.querySelector("#writer");
 
 new Typewriter(writer, {
@@ -31,7 +32,7 @@ window.addEventListener("load", () => {
 // Animation lettre bienvenue
 
 // Animation scroll reveal
-/*
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.config({

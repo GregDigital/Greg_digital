@@ -35,8 +35,6 @@ html {
 
 body {
   overflow-x: hidden;
-  height: 100vh;
-  background-color: #000;
 }
 
 .loader {
@@ -51,9 +49,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -94,7 +90,7 @@ body {
   width: 100%;
 }
 
-.container .section {
+.section {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -607,138 +603,6 @@ header .t nav ul a:hover::after {
   }
 }
 
-.service {
-  position: relative;
-}
-
-.service h1 {
-  font-size: 1.2em;
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
-  margin-top: 3em;
-  text-align: center;
-}
-
-.service h1 img:first-child {
-  margin-right: 0.5em;
-}
-
-.service h1 img:last-child {
-  margin-left: 0.5em;
-}
-
-.service a {
-  color: #FFE990;
-}
-
-.service .text_service {
-  width: 80%;
-  margin: 2em auto 0 auto;
-  text-align: justify;
-  line-height: 2.2;
-  letter-spacing: 1px;
-}
-
-.service .container {
-  margin: 6em auto 6em auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.service .container .container__infos {
-  background-color: #121111;
-  text-align: center;
-  border: solid 2px #FFE990;
-  width: 180px;
-  height: 250px;
-}
-
-.service .container .container__infos img {
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-.service .container .container__infos h2 {
-  font-size: 1em;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-}
-
-#img_peinture {
-  display: block;
-  margin-top: 4em;
-  margin-bottom: 4em;
-  background-image: url(../img/img_peinture.png);
-  width: 100%;
-  height: 200px;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 1;
-}
-
-#img_peinture p {
-  text-align: center;
-  font-size: 1.5em;
-  letter-spacing: 4px;
-}
-
-#img_peinture blockquote p::before {
-  content: "\201C";
-  font-size: 5em;
-  font-family: "Nunito", sans-serif;
-  color: #FFE990;
-}
-
-#img_peinture blockquote p::after {
-  content: "\201D";
-  font-size: 5em;
-  font-family: "Nunito", sans-serif;
-  color: #FFE990;
-}
-
-.reveal1 {
-  opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.visible {
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-}
-
-.apropos {
-  height: 100vh;
-  position: relative;
-}
-
-.apropos .blurBlueSmall {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background: #103D47;
-  border-radius: 100%;
-  height: 40%;
-  width: 40%;
-  -webkit-filter: blur(204px);
-  filter: blur(204px);
-}
-
 .apropos h1 {
   font-size: 1.2em;
   font-family: "Nunito", sans-serif;
@@ -766,6 +630,7 @@ header .t nav ul a:hover::after {
 }
 
 .container_apropos .glass {
+  padding: 2em;
   width: 70%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
@@ -840,58 +705,48 @@ header .t nav ul a:hover::after {
   line-height: 2;
 }
 
-.container_apropos .skills h2 {
+.container_apropos .glass .container_skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container_apropos .glass .container_skills .skills {
+  width: 45%;
+}
+
+.container_apropos .glass .container_skills .skills h2 {
   font-family: "Roboto", sans-serif;
   opacity: 0.3;
   font-size: 7em;
 }
 
-@media only screen and (max-width: 990px) {
-  .apropos {
-    height: auto;
-  }
-  .apropos .container_apropos {
-    height: auto;
-  }
-  .service .container .container__infos {
-    margin-bottom: 2em;
-  }
+.container_apropos .glass .container_skills .logo_skills {
+  width: 45%;
 }
 
-@media only screen and (max-width: 690px) {
-  .apropos {
-    height: auto;
-  }
-  .apropos .container_apropos {
-    display: block;
-    height: auto;
-  }
-  .apropos .container_apropos .text_apropos {
-    margin: 0 auto 2em auto;
-  }
-  .service .container .container__infos {
-    margin-bottom: 2em;
-  }
+.container_apropos .glass .container_skills .logo_skills h2 {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.3;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 780px) {
-  #img_peinture {
-    height: 180px;
-  }
-  #img_peinture p {
-    font-size: 1em;
-    letter-spacing: 1px;
-  }
+.container_apropos .glass .container_skills .logo_skills .logo-dev, .container_apropos .glass .container_skills .logo_skills .logo-design, .container_apropos .glass .container_skills .logo_skills .logo-gest, .container_apropos .glass .container_skills .logo_skills .logo-os {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 440px) {
-  #img_peinture {
-    height: 130px;
-  }
-  #img_peinture p {
-    font-size: 0.8em;
-    letter-spacing: 0;
-  }
+.container_apropos .glass .container_skills .logo_skills .logo-dev img, .container_apropos .glass .container_skills .logo_skills .logo-design img, .container_apropos .glass .container_skills .logo_skills .logo-gest img, .container_apropos .glass .container_skills .logo_skills .logo-os img {
+  margin-bottom: 2em;
+  margin-right: 2em;
 }
 
 .realisation h1 {
@@ -992,7 +847,6 @@ header .t nav ul a:hover::after {
 
 .contact {
   padding-bottom: 1em;
-  margin-top: 5em;
 }
 
 .contact h1 {
