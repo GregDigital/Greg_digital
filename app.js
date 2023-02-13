@@ -18,7 +18,7 @@ new Typewriter(writer, {
   .pauseFor(1000)
 
   .start();
-/*
+
 const loader = document.querySelector(".loader");
 window.addEventListener("load", () => {
   if (localStorage.getItem("premierChargement") === null) {
@@ -29,6 +29,7 @@ window.addEventListener("load", () => {
     }, 5000);
   }
 });
+
 // Animation lettre bienvenue
 
 // Animation scroll reveal
@@ -69,4 +70,3 @@ masks.forEach((mask) => {
     opacity: 1,
   });
 });
-*/

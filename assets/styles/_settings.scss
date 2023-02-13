@@ -50,23 +50,21 @@ body {
     backdrop-filter: blur(50px); 
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  display: none; 
+  display: flex; 
   justify-content: center;
   align-items: center;
   z-index: 1000;
   img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
   }
 }
 .gregdigital {
-  position: absolute;
-  top: 65%;
-  left: 56%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
 }
 
 .lettre {
@@ -81,19 +79,15 @@ body {
 .container{
   position: relative;
   width: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+-webkit-backdrop-filter: blur(50px);
+backdrop-filter: blur(50px);
+-webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
 }
-.sticky{
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(50px); 
-  border:1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-/*
+
+
 @keyframes flash {
   0% {
       color: #ffffff;
@@ -139,7 +133,7 @@ body {
 .lettre:nth-child(10){
   animation-delay: 1s;
 }
-*/
+
 .fondu-out {
 
   opacity: 0;
@@ -162,4 +156,12 @@ body {
 @media only screen and (max-width: 900px) {
    
 p{font-size: 0.9em;}
+  }
+@media only screen and (max-width: 440px) {
+   
+  .lettre {
+  
+    font-size: 2em;
+  
+  }
   }

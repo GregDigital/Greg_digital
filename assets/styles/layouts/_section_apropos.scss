@@ -3,22 +3,6 @@
 
    
  
-
-  h1 {
-    font-size: 1.2em;
-    font-family: $font1;
-    color: $yellow;
-    text-transform: uppercase;
-    margin-top: 2em;
-    margin-bottom: 3em;
-    text-align: center;
-    img:first-child {
-      margin-right: 0.5em;
-    }
-    img:last-child {
-      margin-left: 0.5em;
-    }
-  }
  
 }
 
@@ -30,8 +14,9 @@
 
 
   .glass{
+    margin-top: 5em;
+    margin-bottom: 5em;
     padding: 2em;
-    width: 70%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -128,6 +113,219 @@ display: flex;
 }
 
 @media only screen and (max-width: 990px) {
+  .container_apropos {
+
+    display: flex;
+    justify-content: space-around;
+  
+  
+  
+    .glass{
+      margin-top: 5em;
+      margin-bottom: 5em;
+      padding: 2em;
+      width: 100%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      .apropos_prensentation_container {
+        display: flex;
+        margin-bottom: 2em;
+        flex-direction: column;
+    
+      .apropos_titre{
+  width: 100%;
+      h2{
+        font-family: $font2;
+        opacity: 0.3;
+        font-size: 6em;
+      }
+      p{
+        font-family: $font2;
+        opacity: 0.5;
+        font-size: 3em;
+      }
+    }
+    .apropos_presentation{
+      width:100%;
+      .apropos_who{
+        display: flex;
+        margin-bottom: 2em;
+      img{
+        background-color: rgba(255, 255, 255, 0.563);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+  
+      }
+      h3{
+        align-items: flex-end;
+  display: flex;
+        font-family: $font2;
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+      }
+    }
+  
+      p{
+        font-family: $font2;
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        letter-spacing: 1px;
+        line-height: 2;
+      }
+    }
+  }
+  
+  .container_skills {
+    display: flex;
+    margin-bottom: 2em;
+    flex-direction: column;
+  
+    .skills{
+      width: 100%;
+      h2{
+        font-family: $font2;
+        opacity: 0.3;
+        font-size: 7em;
+      }
+    }
+    .logo_skills{
+      width: 100%;
+      h2{
+        font-family: $font2;
+        opacity: 0.3;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+     .logo-dev,.logo-design,.logo-gest,.logo-os{
+     
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+        margin-bottom: 2em;
+        margin-right: 2em;
+        }
+      
+     }
+    }
+  }
+  
+  }
+  
+  }
+ 
+}
+@media only screen and (max-width: 440px) {
+  .container_apropos {
+
+    display: flex;
+    justify-content: space-around;
+  
+  
+  
+    .glass{
+      margin-top: 5em;
+      margin-bottom: 5em;
+      padding: 2em;
+      width: 100%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      .apropos_prensentation_container {
+        display: flex;
+        margin-bottom: 2em;
+        flex-direction: column;
+    
+      .apropos_titre{
+  width: 100%;
+      h2{
+        font-family: $font2;
+        opacity: 0.3;
+        font-size: 4em;
+      }
+      p{
+        font-family: $font2;
+        opacity: 0.5;
+        font-size: 1.5em;
+      }
+    }
+    .apropos_presentation{
+      width:100%;
+      .apropos_who{
+        display: flex;
+        margin-bottom: 2em;
+      img{
+        background-color: rgba(255, 255, 255, 0.563);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+  
+      }
+      h3{
+        align-items: flex-end;
+  display: flex;
+        font-family: $font2;
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+      }
+    }
+  
+      p{
+        font-family: $font2;
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        letter-spacing: 1px;
+        line-height: 2;
+      }
+    }
+  }
+  
+  .container_skills {
+    display: flex;
+    margin-bottom: 2em;
+    flex-direction: column;
+  
+    .skills{
+      width: 100%;
+      h2{
+        font-family: $font2;
+        opacity: 0.3;
+        font-size: 4em;
+      }
+    }
+    .logo_skills{
+      width: 100%;
+      h2{
+        font-family: $font2;
+        opacity: 0.3;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+     .logo-dev,.logo-design,.logo-gest,.logo-os{
+     
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+        margin-bottom: 2em;
+        margin-right: 2em;
+        }
+      
+     }
+    }
+  }
+  
+  }
+  
+  }
  
 }
 

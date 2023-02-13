@@ -49,7 +49,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -59,20 +61,22 @@ body {
   z-index: 1000;
 }
 
-.loader img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .gregdigital {
-  position: absolute;
-  top: 65%;
-  left: 56%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .lettre {
@@ -88,69 +92,89 @@ body {
 .container {
   position: relative;
   width: 100%;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(50px);
   -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-/*
-@keyframes flash {
+@-webkit-keyframes flash {
   0% {
-      color: #ffffff;
-    
+    color: #ffffff;
   }
   90% {
-      color: #ffffff28;
-      text-shadow: none;
+    color: #ffffff28;
+    text-shadow: none;
   }
   100% {
-      color: #ffffff;
-    
+    color: #ffffff;
   }
 }
 
-.lettre:nth-child(1){
-  animation-delay: 0.1s;
+@keyframes flash {
+  0% {
+    color: #ffffff;
+  }
+  90% {
+    color: #ffffff28;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffffff;
+  }
 }
-.lettre:nth-child(2){
-  animation-delay: 0.2s;
+
+.lettre:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
-.lettre:nth-child(3){
-  animation-delay: 0.3s;
+
+.lettre:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
-.lettre:nth-child(4){
-  animation-delay: 0.4s;
+
+.lettre:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
-.lettre:nth-child(5){
-  animation-delay: 0.5s;
+
+.lettre:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
-.lettre:nth-child(6){
-  animation-delay: 0.6s;
+
+.lettre:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
-.lettre:nth-child(7){
-  animation-delay: 0.7s;
+
+.lettre:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
-.lettre:nth-child(8){
-  animation-delay: 0.8s;
+
+.lettre:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
-.lettre:nth-child(9){
-  animation-delay: 0.9s;
+
+.lettre:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
-.lettre:nth-child(10){
-  animation-delay: 1s;
+
+.lettre:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
-*/
+
+.lettre:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 .fondu-out {
   opacity: 0;
   -webkit-transition: opacity 0.8s ease-out;
@@ -173,6 +197,12 @@ body {
 @media only screen and (max-width: 900px) {
   p {
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .lettre {
+    font-size: 2em;
   }
 }
 
@@ -305,7 +335,11 @@ header .t nav ul a:hover::after {
   }
   header .t.overlay {
     display: block;
-    background-color: rgba(0, 0, 0, 0.781);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     height: 100vh;
     width: 100vw;
   }
@@ -579,30 +613,29 @@ header .t nav ul a:hover::after {
 }
 
 @media only screen and (max-width: 448px) {
-  .home #svg {
-    width: 243px;
+  .home {
+    height: 100vh;
+    width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
-  .home .frame_left {
-    top: 53%;
+  .home #writer {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-}
-
-.apropos h1 {
-  font-size: 1.2em;
-  font-family: "Nunito", sans-serif;
-  color: #FFE990;
-  text-transform: uppercase;
-  margin-top: 2em;
-  margin-bottom: 3em;
-  text-align: center;
-}
-
-.apropos h1 img:first-child {
-  margin-right: 0.5em;
-}
-
-.apropos h1 img:last-child {
-  margin-left: 0.5em;
 }
 
 .container_apropos {
@@ -614,8 +647,9 @@ header .t nav ul a:hover::after {
 }
 
 .container_apropos .glass {
+  margin-top: 5em;
+  margin-bottom: 5em;
   padding: 2em;
-  width: 70%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -733,32 +767,255 @@ header .t nav ul a:hover::after {
   margin-right: 2em;
 }
 
+@media only screen and (max-width: 990px) {
+  .container_apropos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container_apropos .glass {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 2em;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  .container_apropos .glass .apropos_prensentation_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_titre {
+    width: 100%;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_titre h2 {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.3;
+    font-size: 6em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_titre p {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.5;
+    font-size: 3em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation {
+    width: 100%;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who img {
+    background-color: rgba(255, 255, 255, 0.563);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who h3 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
+  .container_apropos .glass .container_skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_apropos .glass .container_skills .skills {
+    width: 100%;
+  }
+  .container_apropos .glass .container_skills .skills h2 {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.3;
+    font-size: 7em;
+  }
+  .container_apropos .glass .container_skills .logo_skills {
+    width: 100%;
+  }
+  .container_apropos .glass .container_skills .logo_skills h2 {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.3;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .container_apropos .glass .container_skills .logo_skills .logo-dev, .container_apropos .glass .container_skills .logo_skills .logo-design, .container_apropos .glass .container_skills .logo_skills .logo-gest, .container_apropos .glass .container_skills .logo_skills .logo-os {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_apropos .glass .container_skills .logo_skills .logo-dev img, .container_apropos .glass .container_skills .logo_skills .logo-design img, .container_apropos .glass .container_skills .logo_skills .logo-gest img, .container_apropos .glass .container_skills .logo_skills .logo-os img {
+    margin-bottom: 2em;
+    margin-right: 2em;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .container_apropos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container_apropos .glass {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 2em;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  .container_apropos .glass .apropos_prensentation_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_titre {
+    width: 100%;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_titre h2 {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.3;
+    font-size: 4em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_titre p {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.5;
+    font-size: 1.5em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation {
+    width: 100%;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who img {
+    background-color: rgba(255, 255, 255, 0.563);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation .apropos_who h3 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+  }
+  .container_apropos .glass .apropos_prensentation_container .apropos_presentation p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
+  .container_apropos .glass .container_skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_apropos .glass .container_skills .skills {
+    width: 100%;
+  }
+  .container_apropos .glass .container_skills .skills h2 {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.3;
+    font-size: 4em;
+  }
+  .container_apropos .glass .container_skills .logo_skills {
+    width: 100%;
+  }
+  .container_apropos .glass .container_skills .logo_skills h2 {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.3;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .container_apropos .glass .container_skills .logo_skills .logo-dev, .container_apropos .glass .container_skills .logo_skills .logo-design, .container_apropos .glass .container_skills .logo_skills .logo-gest, .container_apropos .glass .container_skills .logo_skills .logo-os {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_apropos .glass .container_skills .logo_skills .logo-dev img, .container_apropos .glass .container_skills .logo_skills .logo-design img, .container_apropos .glass .container_skills .logo_skills .logo-gest img, .container_apropos .glass .container_skills .logo_skills .logo-os img {
+    margin-bottom: 2em;
+    margin-right: 2em;
+  }
+}
+
 .realisation {
-  position: relative;
-  width: 100%;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  height: 100vh;
 }
 
 .realisation h1 {
-  font-size: 1.2em;
-  font-family: "Roboto", sans-serif;
-  color: #FFE990;
-  text-transform: uppercase;
-  margin-top: 1em;
-  margin-bottom: 5em;
   text-align: center;
-}
-
-.realisation h1 img:first-child {
-  margin-right: 0.5em;
-}
-
-.realisation h1 img:last-child {
-  margin-left: 0.5em;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.3;
+  font-size: 7em;
 }
 
 .realisation .text_realisation {
@@ -825,34 +1082,31 @@ header .t nav ul a:hover::after {
        object-fit: cover;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
   }
-  .realisation .right img:hover {
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+}
+
+@media only screen and (max-width: 440px) {
+  .realisation h1 {
+    font-size: 4em;
   }
 }
 
 .contact {
-  padding-bottom: 1em;
+  height: 100vh;
 }
 
 .contact h1 {
-  font-size: 1.2em;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 5em;
   text-align: center;
-  color: #FFE990;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.3;
+  font-size: 7em;
 }
 
 .contact form {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4em;
 }
 
 .contact .formData {
@@ -995,6 +1249,41 @@ header .t nav ul a:hover::after {
   text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .contact form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .contact h1 {
+    font-size: 5em;
+  }
+  .contact form {
+    width: 95%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .contact {
+    height: auto;
+    margin-bottom: 4em;
+  }
+  .contact h1 {
+    font-size: 4em;
+  }
+  .contact form {
+    width: 95%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,10 +1295,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 4em;
   padding-right: 0.5em;
   padding-left: 0.5em;
-  margin-top: 4em;
 }
 
 footer img {
