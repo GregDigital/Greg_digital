@@ -1,5 +1,5 @@
 //Animation texte accueil
-/*
+
 const writer = document.querySelector("#writer");
 
 new Typewriter(writer, {
@@ -18,7 +18,7 @@ new Typewriter(writer, {
   .pauseFor(1000)
 
   .start();
-
+/*
 const loader = document.querySelector(".loader");
 window.addEventListener("load", () => {
   if (localStorage.getItem("premierChargement") === null) {

@@ -1,4 +1,9 @@
 .realisation {
+  position: relative;
+  width: 100%;
+backdrop-filter: blur(50px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
  
   h1 {
     font-size: 1.2em;
@@ -56,7 +61,7 @@
    
 .realisation{
 
-  height: auto;
+
   .container_realisation {
     margin-top: 4em;
     display: block;

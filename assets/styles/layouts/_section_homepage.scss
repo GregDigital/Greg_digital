@@ -1,6 +1,8 @@
 .home {
   height: 100vh;
   width: 100vw;
+  position: sticky;
+  top: 0;
 
   #writer{
     font-family: $font2;
@@ -43,20 +45,7 @@
     }
   }
 
-  #svg {
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-  }
-  #svg path * {
-    stroke-linecap: square;
-    fill-opacity: 0;
-    transition: fill-opacity 1s;
-  }
-  #svg.finished * {
-    fill-opacity: 1;
-  }
+
   .styles_noise__LtUjd {
     width: 100%;
     height: 100%;
