@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
 // Animation lettre bienvenue
 
 // Animation scroll reveal
-
+/*
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.config({
@@ -70,3 +70,4 @@ masks.forEach((mask) => {
     opacity: 1,
   });
 });
+*/
