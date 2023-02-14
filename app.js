@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   } else {
     setTimeout(() => {
       loader.classList.add("fondu-out");
-    }, 5000);
+    }, 6000);
   }
 });
 

@@ -843,6 +843,7 @@ header .t nav ul a:hover::after {
   font-family: "Roboto", sans-serif;
   opacity: 0.3;
   font-size: 7em;
+  padding-top: 0.5em;
 }
 
 .realisation .text_realisation {
@@ -1464,7 +1465,7 @@ main {
     margin-bottom: 0.5em;
     font-family: "Roboto", sans-serif;
     opacity: 0.7;
-    font-size: 4em;
+    font-size: 3em;
   }
   .image-container .presentation .titre h2 {
     margin-bottom: 0.5em;
