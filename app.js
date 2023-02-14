@@ -1,3 +1,16 @@
+const loader = document.querySelector(".loader");
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("premierChargement") === null) {
+    localStorage.setItem("premierChargement", "done");
+    loader.classList.add("fondu-out"); // Ajoute la classe pour cacher le loader
+  } else {
+    setTimeout(() => {
+      loader.classList.add("fondu-out");
+    }, 5000);
+  }
+});
+
 //Animation texte accueil
 
 const writer = document.querySelector("#writer");
@@ -9,26 +22,15 @@ new Typewriter(writer, {
   .changeDelay(70)
   .typeString("Hello,<br> Moi c'est Greg<br>")
   .pauseFor(300)
-  .typeString("<span style='color: #FFE990'>Designer,</span>")
+  .typeString("<span style='color: #FFE990'>UX/UI Designer,</span>")
   .pauseFor(1000)
-  .deleteChars(10)
+  .deleteChars(16)
   .typeString(
     "<span style='color: #FFE990'><br>Dev Front-End Javascript-React</span>"
   )
   .pauseFor(1000)
 
   .start();
-
-const loader = document.querySelector(".loader");
-window.addEventListener("load", () => {
-  if (localStorage.getItem("premierChargement") === null) {
-    localStorage.setItem("premierChargement", "done");
-  } else {
-    setTimeout(() => {
-      loader.classList.add("fondu-out");
-    }, 5000);
-  }
-});
 
 // Animation lettre bienvenue
 
