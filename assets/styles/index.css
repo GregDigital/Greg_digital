@@ -629,11 +629,13 @@ header .t nav ul a:hover::after {
   }
   .container_apropos .glass .apropos_prensentation_container .apropos_titre {
     width: 100%;
+    margin-bottom: 2em;
   }
   .container_apropos .glass .apropos_prensentation_container .apropos_titre h2 {
     font-family: "Roboto", sans-serif;
     opacity: 0.3;
     font-size: 6em;
+    text-align: center;
   }
   .container_apropos .glass .apropos_prensentation_container .apropos_titre p {
     font-family: "Roboto", sans-serif;

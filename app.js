@@ -3,10 +3,10 @@
 const writer = document.querySelector("#writer");
 
 new Typewriter(writer, {
-  //loop: true,
-  deleteSpeed: 60,
+  loop: true,
+  deleteSpeed: 70,
 })
-  .changeDelay(60)
+  .changeDelay(70)
   .typeString("Hello,<br> Moi c'est Greg<br>")
   .pauseFor(300)
   .typeString("<span style='color: #FFE990'>Designer,</span>")

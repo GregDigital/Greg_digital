@@ -130,10 +130,12 @@ display: flex;
     
       .apropos_titre{
   width: 100%;
+  margin-bottom: 2em;
       h2{
         font-family: $font2;
         opacity: 0.3;
         font-size: 6em;
+        text-align: center;
       }
       p{
         font-family: $font2;
@@ -238,6 +240,7 @@ display: flex;
     
       .apropos_titre{
   width: 100%;
+ 
       h2{
         font-family: $font2;
         opacity: 0.3;
