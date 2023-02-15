@@ -26,11 +26,10 @@ form.addEventListener("submit", function (e) {
     validMessage(form.message)
   ) {
     statusTxt = form.querySelector(".button-area span");
-    statusTxt.style.color = "#ad6c6c";
     statusTxt.style.display = "block";
     statusTxt.innerText = "Envoi de votre message...";
     let xhr = new XMLHttpRequest();
-    xhr.open("form.php", true);
+    xhr.open("POST", "form.php", true);
     xhr.onload = () => {
       if (xhr.readyState == 4 && xhr.status == 200) {
         let response = xhr.response;
@@ -181,5 +180,3 @@ const validMessage = function (inputMessage) {
     return false;
   }
 };
-
-// https://www.youtube.com/watch?v=CreEhp8I-XA
