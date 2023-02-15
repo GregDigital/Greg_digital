@@ -14,7 +14,7 @@
     }elseif(empty($name) || empty($first) || empty($mobile) || empty($email) || empty($message)){
       echo "veuillez remplir tous les champs svp";
     }else {
-      $to = "contact@carrosserieberrouet.fr";
+      $to = "hello@gregdigital.fr";
       $subject = "Nouveau message : $name <$email>";
       $body = "Nom: $name\nPrenom: $first\nEmail: $email\nTéléphone: $mobile\nMessage: $message\n";
       $sender = "From: $email";
