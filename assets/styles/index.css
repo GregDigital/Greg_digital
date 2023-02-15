@@ -941,21 +941,15 @@ header .t nav ul a:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: satoshi,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #FFE990;
   height: 62px;
   border-radius: 42px;
   padding: 16px 30px;
   border: 4px solid #72D1EC;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
   font-size: inherit;
-  cursor: pointer;
+  cursor: auto;
   margin-bottom: 2em;
 }
 
@@ -968,19 +962,13 @@ header .t nav ul a:hover::after {
 
 .contact #message {
   padding: 1em;
-  font-family: satoshi,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #FFE990;
   height: 100px;
   border-radius: 42px;
   padding: 16px 30px;
   border: 4px solid #72D1EC;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
   font-size: inherit;
   cursor: pointer;
   margin-bottom: 2em;
@@ -1012,7 +1000,7 @@ header .t nav ul a:hover::after {
   height: 100%;
   border-radius: 34px;
   padding: 0 30px;
-  font-family: satoshi,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #FFE990;
   background-color: transparent;
