@@ -1343,10 +1343,10 @@ footer .copyright {
   line-height: 2;
 }
 
-.image-container .presentation_id img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-width: 50%;
+.image-container .presentation_id img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
 }
 
 .image-container .card_visit {
@@ -1387,6 +1387,9 @@ footer .copyright {
 }
 
 .image-container .card_visit .card_visit_id .card_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
   padding: 1em;
 }
 
@@ -1399,6 +1402,9 @@ footer .copyright {
 }
 
 .image-container .site img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1521,7 +1527,7 @@ main {
   .image-container .presentation_id img {
     -o-object-fit: contain;
        object-fit: contain;
-    max-width: 50%;
+    max-width: 100%;
   }
   .image-container .card_visit {
     border-bottom: solid 1px white;
