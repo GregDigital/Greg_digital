@@ -236,8 +236,12 @@ header .t nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .t nav ul li {
@@ -731,13 +735,6 @@ header .t nav ul a:hover::after {
     margin-bottom: 5em;
     padding: 2em;
     width: 100%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
   .container_apropos .glass .apropos_prensentation_container {
     display: -webkit-box;
@@ -844,6 +841,14 @@ header .t nav ul a:hover::after {
   opacity: 0.3;
   font-size: 7em;
   padding-top: 0.5em;
+}
+
+.realisation h2 {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 1em 0 1em 0.5em;
 }
 
 .realisation .text_realisation {
@@ -1060,6 +1065,7 @@ header .t nav ul a:hover::after {
   padding: 0.5em;
   width: 50%;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .contact .button-area {
@@ -1203,7 +1209,7 @@ footer .copyright {
   position: sticky;
   cursor: pointer;
   left: 95%;
-  top: 20px;
+  top: 60px;
   cursor: pointer;
   -webkit-animation: lightbox 0.5s;
           animation: lightbox 0.5s;
@@ -1411,10 +1417,62 @@ main {
   place-items: center;
 }
 
+.h1_projet {
+  margin-bottom: 0.5em;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.7;
+  font-size: 3em;
+}
+
+.h2_projet {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 1em;
+  border-top: solid 1px white;
+  padding-top: 1em;
+}
+
+.h3_projet {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+.p_projet {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-bottom: 2em;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.li_projet {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.fa-brands.fa-github {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
 @media only screen and (max-width: 900px) {
   .close {
     left: 89%;
-    top: 20px;
+    top: 60px;
   }
   .image-container {
     max-width: 1220px;
@@ -1563,6 +1621,9 @@ main {
     letter-spacing: 2px;
     line-height: 2;
     margin-bottom: 5em;
+  }
+  .h1_projet {
+    font-size: 2em;
   }
 }
 

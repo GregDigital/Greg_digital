@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   } else {
     setTimeout(() => {
       loader.classList.add("fondu-out");
-    }, 6000);
+    }, 4000);
   }
 });
 
@@ -35,7 +35,7 @@ new Typewriter(writer, {
 // Animation lettre bienvenue
 
 // Animation scroll reveal
-/*
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.config({
@@ -72,4 +72,3 @@ masks.forEach((mask) => {
     opacity: 1,
   });
 });
-*/

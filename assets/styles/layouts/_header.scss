@@ -13,7 +13,9 @@ header {
     nav {
       ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+      
         li {
           position: relative;
           display: flex;

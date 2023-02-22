@@ -25,6 +25,89 @@
             "card_visit_verso": "verso_berrouet.png",
             "imac": "imac_berrouet.png",
             "texte_site": "Le site web offre une expérience visuelle immersive grâce à une vidéo en fond sur la page d'accueil. Deux versions ont été conçues, une pour ordinateur et une pour mobile, pour une expérience optimale sur tous les appareils. L'animation est gérée par du JavaScript pour un effet dynamique. La galerie d'images est optimisée pour montrer les véhicules avant et après l'intervention, sans duplication de code. Pour soumettre une demande, un formulaire en PHP est disponible. Le référencement naturel est également ciblé pour une meilleure visibilité en ligne."
+        },
+        {
+            "id": 3,
+            "h1": "Parcours développeur d'application Front-End de 12 mois chez OpenClassrooms",
+            "description": "14 projets réalisés de A à Z avec l'optimisation des interfaces de sites.",
+            "h2": "Les compétences acquises grâce à cette formation :",
+            "competences": [
+                "Choisir une solution technique adaptée à votre client et travailler en mode Agile",
+                "Créer des sites webs avec HTML et CSS ",
+                "Créer des applications web dynamiques avec Javascript et React",
+                "Communiquer avec le back-end de l’application grâce à une API",
+                "Mettre en œuvre des test unitaires et d’intégration et débugger le code",
+                "Résoudre des problèmes techniques avec un langage de programmation et des algorithmes",
+                "Refactoriser du code pour qu’il soit plus moderne et optimisé."
+            ],
+            "projets": [
+                {
+                    "n_projet": "Projet 1",
+                    "titre_projet": "Transformer une maquette en site web avec HTML & CSS",
+                    "description_p": "Implémenter une interface responsive, intégrer du contenu conformément à une maquette.",
+                    "lien": "https://gregdigital.github.io/GregoryDosSantos_2_03122020/"
+                },
+                {
+                    "n_projet": "Projet 2",
+                    "titre_projet": "Dynamiser une page web avec des animations CSS",
+                    "description_p": "Mettre en place une structure de navigation pour un site web, mettre en place son environnement Front-End, assurer la cohérence graphique d'un site web, mettre en œuvre des effets CSS graphiques avancés, utiliser un système de gestion de versions pour le suivi du projet et son hébergement.",
+                    "lien": "https://gregdigital.github.io/GregoryDosSantos_3_30122020/"
+                },
+                {
+                    "n_projet": "Projet 3",
+                    "titre_projet": "Créer une landing page avec Javascript",
+                    "description_p": "Ajouter le code JavaScript manquant pour que le formulaire soit pleinement fonctionnel.",
+                    "lien": "https://github.com/GregDigital/GregoryDosSantos_4_12022020"
+                },
+                {
+                    "n_projet": "Projet 4",
+                    "titre_projet": "Créez un site accessible pour une plateforme de photographes",
+                    "description_p": "Assurer l'accessibilité d'un site web, gérer les évènements d'un site avec JavaScript, développer une application web modulaire avec des design patterns, écrire du code JavaScript maintenable.",
+                    "lien": "https://gregdigital.github.io/GregoryDosSantos_6_25032021/"
+                },
+                {
+                    "n_projet": "Projet 5",
+                    "titre_projet": "Développez un algorithme de recherche en JavaScript",
+                    "description_p": "Analyser un problème informatique, développer un algorithme pour résoudre un problème.",
+                    "lien": "https://gregdigital.github.io/GregoryDosSantos_7_16072021/"
+                },
+                {
+                    "n_projet": "Projet 6",
+                    "titre_projet": "Débuggez et testez un SaaS RH",
+                    "description_p": "Ecrire des tests unitaires avec JavaScript ,débugger une application web avec le Chrome Debugger, rédiger un plan de test end-to-end manuel, écrire des tests d'intégration avec JavaScript.",
+                    "lien": "https://github.com/GregDigital/Gregory_Dos_Santos_09_22122021"
+                },
+                {
+                    "n_projet": "Projet 7",
+                    "titre_projet": "Définissez les besoins pour une app de soutien scolaire",
+                    "description_p": "Modéliser une solution technique pour un client, identifier les besoins de l'application à partir d'un cahier des charges, contribuer à un projet en utilisant une méthodologie agile, créer une maquette pour un client.",
+                    "lien": "https://github.com/GregDigital/Gregory_DosSantos_10_07102021"
+                },
+                {
+                    "n_projet": "Projet 8",
+                    "titre_projet": "Développez une application Web avec React et React Router",
+                    "description_p": "Créer des composants avec React, développer les routes d'une application web avec React Router, initialiser une application web avec un framework.",
+                    "lien": "https://github.com/GregDigital/gregory_dossantos_11_191021"
+                },
+                {
+                    "n_projet": "Projet 9",
+                    "titre_projet": "Développez un tableau de bord d'analytics avec React",
+                    "description_p": "Assurer la qualité des données d'une application, interagir avec un service Web, développer des éléments graphiques avancés à l'aide de bibliothèques JavaScript, produire de la documentation technique pour une application.",
+                    "lien": "https://github.com/GregDigital/Gregory_Dos_Santos_12_17112021"
+                },
+                {
+                    "n_projet": "Projet 10",
+                    "titre_projet": "Utilisez une API pour un compte utilisateur bancaire avec React",
+                    "description_p": "Implémenter un gestionnaire d'état dans une application React, intéragir avec une API, modéliser une API, s'authentifier à une API.",
+                    "lien": "https://github.com/GregDigital/gregory_dos_santos_13_14012022"
+                },
+                {
+                    "n_projet": "Projet 11",
+                    "titre_projet": "Faites passer une librairie jQuery vers React",
+                    "description_p": "Analyser la performance d'une application web, programmer en JavaScript avec la programmation fonctionnelle, refondre une application pour réduire la dette technique, déployer une application front-end.",
+                    "lien": ""
+                }
+            ]
         }
     ]
 }

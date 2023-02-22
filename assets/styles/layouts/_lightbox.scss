@@ -34,7 +34,7 @@
   position: sticky;
   cursor: pointer;
   left: 95%;
-top: 20px;
+top: 60px;
   cursor: pointer;
   animation: lightbox 0.5s;
   transition: opacity 0.3s;
@@ -230,6 +230,59 @@ main {
   //min-height: 100vh;
 }
 
+.h1_projet{
+  margin-bottom: 0.5em;
+font-family: "Roboto", sans-serif;
+opacity: 0.7;
+font-size: 3em;
+}
+
+.h2_projet{
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 1em;
+  border-top: solid 1px white;
+  padding-top: 1em;
+
+}
+
+.h3_projet{
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+.p_projet{
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-bottom: 2em;
+
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+.li_projet{
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2;
+  
+}
+
+.fa-brands.fa-github {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
 
 
 
@@ -239,7 +292,7 @@ main {
    
 .close{
   left: 89%;
-  top: 20px;
+  top: 60px;
 }
 .image-container {
   max-width: 1220px;
@@ -391,6 +444,10 @@ margin-bottom: 5em;
 }
 
 
+}
+.h1_projet {
+
+  font-size: 2em;
 }
 }
 

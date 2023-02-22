@@ -5,24 +5,25 @@ let close = document.querySelector(".close");
 let scroll = document.querySelector("body");
 
 function show(response) {
+  let item3 = document.querySelector('[data-id="3"]');
+  item3.addEventListener("click", (e) => {
+    lightbox.style.display = "grid";
+    scroll.classList.add("true");
+    container.innerHTML = opa(response.car.find((img) => img.id === 3));
+    displayClose();
+  });
+
   items.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      lightbox.style.display = "grid";
-      scroll.classList.add("true");
-
-      let id = item.dataset.id;
-      let acc = [];
-      for (let img of response.car) {
-        if (id == img.id) {
-          acc.push(afficher(img));
-        }
-      }
-
-      let html = acc.reduce((a, l) => a + l);
-      container.innerHTML = html;
-
-      displayClose();
-    });
+    if (item.dataset.id !== "3") {
+      item.addEventListener("click", (e) => {
+        lightbox.style.display = "grid";
+        scroll.classList.add("true");
+        container.innerHTML = afficher(
+          response.car.find((img) => img.id == item.dataset.id)
+        );
+        displayClose();
+      });
+    }
   });
 }
 
@@ -34,6 +35,39 @@ function displayClose() {
       lightbox.style.display = "none";
     }
   });
+}
+function generateli(competences) {
+  let acc = [];
+  for (let competence of competences) {
+    acc.push(`<li class="li_projet">${competence} ✅</li>`);
+  }
+  let html = acc.reduce((a, l) => a + l);
+  return html;
+}
+function opa(u) {
+  let competencesHtml = generateli(u.competences);
+  let projetsHtml = "";
+
+  for (let projet of u.projets) {
+    let projetLi = `
+    <h2 class="h2_projet">${projet.n_projet}</h2>
+    <h3 class="h3_projet">${projet.titre_projet}</h3>
+    <p class="p_projet">${projet.description_p}</p>
+    <a class="a_projet" href="${projet.lien}" target="_blank"><i class="fa-brands fa-github"></i></a>
+   
+    `;
+    projetsHtml += projetLi;
+  }
+
+  return `
+  <h1 class="h1_projet"> ${u.h1}</h1>
+  <p class="p_projet">${u.description}</p>
+  <h2 class="h2_projet">${u.h2}</h2>
+    <ol>
+      ${competencesHtml}
+    </ol>
+      ${projetsHtml}
+  `;
 }
 
 function afficher(user) {
